@@ -11,7 +11,7 @@ const pgConfig = process.env.DATABASE_URL;
 const schemaName = 'csv';
 const options = {
   exportJsonSchemaPath: path.join(__dirname, 'export-json-schema.json'),
-  exportGqlSchemaPath: path.join(__dirname, 'export-gql-schema.json'),
+  exportGqlSchemaPath: path.join(__dirname, 'export-gql-schema.graphql'),
 };
 
 app.use(postgraphile(pgConfig, schemaName, options));
