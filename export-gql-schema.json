@@ -1,0 +1,6308 @@
+type AuxEngine {
+  lrno: String
+  engineSequence: String
+  engineBuilder: String
+  engineDesigner: String
+  engineModel: String
+  numberOfCylinders: String
+  bore: String
+  stroke: String
+  strokeType: String
+  maxPower: String
+  createDate: Date
+}
+
+"""
+A condition to be used against `AuxEngine` object types. All fields are tested
+for equality and combined with a logical ‘and.’
+"""
+input AuxEngineCondition {
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `engineSequence` field."""
+  engineSequence: String
+
+  """Checks for equality with the object’s `engineBuilder` field."""
+  engineBuilder: String
+
+  """Checks for equality with the object’s `engineDesigner` field."""
+  engineDesigner: String
+
+  """Checks for equality with the object’s `engineModel` field."""
+  engineModel: String
+
+  """Checks for equality with the object’s `numberOfCylinders` field."""
+  numberOfCylinders: String
+
+  """Checks for equality with the object’s `bore` field."""
+  bore: String
+
+  """Checks for equality with the object’s `stroke` field."""
+  stroke: String
+
+  """Checks for equality with the object’s `strokeType` field."""
+  strokeType: String
+
+  """Checks for equality with the object’s `maxPower` field."""
+  maxPower: String
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `AuxEngine`"""
+input AuxEngineInput {
+  lrno: String
+  engineSequence: String
+  engineBuilder: String
+  engineDesigner: String
+  engineModel: String
+  numberOfCylinders: String
+  bore: String
+  stroke: String
+  strokeType: String
+  maxPower: String
+  createDate: Date
+}
+
+"""A connection to a list of `AuxEngine` values."""
+type AuxEnginesConnection {
+  """A list of `AuxEngine` objects."""
+  nodes: [AuxEngine]!
+
+  """
+  A list of edges which contains the `AuxEngine` and cursor to aid in pagination.
+  """
+  edges: [AuxEnginesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """The count of *all* `AuxEngine` you could get from the connection."""
+  totalCount: Int
+}
+
+"""A `AuxEngine` edge in the connection."""
+type AuxEnginesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `AuxEngine` at the end of the edge."""
+  node: AuxEngine
+}
+
+"""Methods to use when ordering `AuxEngine`."""
+enum AuxEnginesOrderBy {
+  NATURAL
+  LRNO_ASC
+  LRNO_DESC
+  ENGINE_SEQUENCE_ASC
+  ENGINE_SEQUENCE_DESC
+  ENGINE_BUILDER_ASC
+  ENGINE_BUILDER_DESC
+  ENGINE_DESIGNER_ASC
+  ENGINE_DESIGNER_DESC
+  ENGINE_MODEL_ASC
+  ENGINE_MODEL_DESC
+  NUMBER_OF_CYLINDERS_ASC
+  NUMBER_OF_CYLINDERS_DESC
+  BORE_ASC
+  BORE_DESC
+  STROKE_ASC
+  STROKE_DESC
+  STROKE_TYPE_ASC
+  STROKE_TYPE_DESC
+  MAX_POWER_ASC
+  MAX_POWER_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+type AuxiliaryGenerator {
+  lrno: String
+  number: Int
+  kwEach: BigFloat
+  voltage1: Int
+  voltage2: Int
+  frequency: Int
+  acdc: String
+  mainEngineDriven: String
+  seq: String
+  createDate: Date
+}
+
+"""
+A condition to be used against `AuxiliaryGenerator` object types. All fields are
+tested for equality and combined with a logical ‘and.’
+"""
+input AuxiliaryGeneratorCondition {
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `number` field."""
+  number: Int
+
+  """Checks for equality with the object’s `kwEach` field."""
+  kwEach: BigFloat
+
+  """Checks for equality with the object’s `voltage1` field."""
+  voltage1: Int
+
+  """Checks for equality with the object’s `voltage2` field."""
+  voltage2: Int
+
+  """Checks for equality with the object’s `frequency` field."""
+  frequency: Int
+
+  """Checks for equality with the object’s `acdc` field."""
+  acdc: String
+
+  """Checks for equality with the object’s `mainEngineDriven` field."""
+  mainEngineDriven: String
+
+  """Checks for equality with the object’s `seq` field."""
+  seq: String
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `AuxiliaryGenerator`"""
+input AuxiliaryGeneratorInput {
+  lrno: String
+  number: Int
+  kwEach: BigFloat
+  voltage1: Int
+  voltage2: Int
+  frequency: Int
+  acdc: String
+  mainEngineDriven: String
+  seq: String
+  createDate: Date
+}
+
+"""A connection to a list of `AuxiliaryGenerator` values."""
+type AuxiliaryGeneratorsConnection {
+  """A list of `AuxiliaryGenerator` objects."""
+  nodes: [AuxiliaryGenerator]!
+
+  """
+  A list of edges which contains the `AuxiliaryGenerator` and cursor to aid in pagination.
+  """
+  edges: [AuxiliaryGeneratorsEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """
+  The count of *all* `AuxiliaryGenerator` you could get from the connection.
+  """
+  totalCount: Int
+}
+
+"""A `AuxiliaryGenerator` edge in the connection."""
+type AuxiliaryGeneratorsEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `AuxiliaryGenerator` at the end of the edge."""
+  node: AuxiliaryGenerator
+}
+
+"""Methods to use when ordering `AuxiliaryGenerator`."""
+enum AuxiliaryGeneratorsOrderBy {
+  NATURAL
+  LRNO_ASC
+  LRNO_DESC
+  NUMBER_ASC
+  NUMBER_DESC
+  KWEACH_ASC
+  KWEACH_DESC
+  VOLTAGE1_ASC
+  VOLTAGE1_DESC
+  VOLTAGE2_ASC
+  VOLTAGE2_DESC
+  FREQUENCY_ASC
+  FREQUENCY_DESC
+  ACDC_ASC
+  ACDC_DESC
+  MAIN_ENGINE_DRIVEN_ASC
+  MAIN_ENGINE_DRIVEN_DESC
+  SEQ_ASC
+  SEQ_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+"""
+A floating point number that requires more precision than IEEE 754 binary 64
+"""
+scalar BigFloat
+
+type BoilersExpanded {
+  lrno: String
+  sequence: String
+  builder: String
+  design: String
+  effectiveDate: String
+  numberOfBoilers: String
+  boilerTypeCode: String
+  boilerTypeDecode: String
+  firingTypeCode: String
+  firingTypeDecode: String
+  createDate: Date
+}
+
+"""
+A condition to be used against `BoilersExpanded` object types. All fields are
+tested for equality and combined with a logical ‘and.’
+"""
+input BoilersExpandedCondition {
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `sequence` field."""
+  sequence: String
+
+  """Checks for equality with the object’s `builder` field."""
+  builder: String
+
+  """Checks for equality with the object’s `design` field."""
+  design: String
+
+  """Checks for equality with the object’s `effectiveDate` field."""
+  effectiveDate: String
+
+  """Checks for equality with the object’s `numberOfBoilers` field."""
+  numberOfBoilers: String
+
+  """Checks for equality with the object’s `boilerTypeCode` field."""
+  boilerTypeCode: String
+
+  """Checks for equality with the object’s `boilerTypeDecode` field."""
+  boilerTypeDecode: String
+
+  """Checks for equality with the object’s `firingTypeCode` field."""
+  firingTypeCode: String
+
+  """Checks for equality with the object’s `firingTypeDecode` field."""
+  firingTypeDecode: String
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `BoilersExpanded`"""
+input BoilersExpandedInput {
+  lrno: String
+  sequence: String
+  builder: String
+  design: String
+  effectiveDate: String
+  numberOfBoilers: String
+  boilerTypeCode: String
+  boilerTypeDecode: String
+  firingTypeCode: String
+  firingTypeDecode: String
+  createDate: Date
+}
+
+"""A connection to a list of `BoilersExpanded` values."""
+type BoilersExpandedsConnection {
+  """A list of `BoilersExpanded` objects."""
+  nodes: [BoilersExpanded]!
+
+  """
+  A list of edges which contains the `BoilersExpanded` and cursor to aid in pagination.
+  """
+  edges: [BoilersExpandedsEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """
+  The count of *all* `BoilersExpanded` you could get from the connection.
+  """
+  totalCount: Int
+}
+
+"""A `BoilersExpanded` edge in the connection."""
+type BoilersExpandedsEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `BoilersExpanded` at the end of the edge."""
+  node: BoilersExpanded
+}
+
+"""Methods to use when ordering `BoilersExpanded`."""
+enum BoilersExpandedsOrderBy {
+  NATURAL
+  LRNO_ASC
+  LRNO_DESC
+  SEQUENCE_ASC
+  SEQUENCE_DESC
+  BUILDER_ASC
+  BUILDER_DESC
+  DESIGN_ASC
+  DESIGN_DESC
+  EFFECTIVE_DATE_ASC
+  EFFECTIVE_DATE_DESC
+  NUMBER_OF_BOILERS_ASC
+  NUMBER_OF_BOILERS_DESC
+  BOILER_TYPE_CODE_ASC
+  BOILER_TYPE_CODE_DESC
+  BOILER_TYPE_DECODE_ASC
+  BOILER_TYPE_DECODE_DESC
+  FIRING_TYPE_CODE_ASC
+  FIRING_TYPE_CODE_DESC
+  FIRING_TYPE_DECODE_ASC
+  FIRING_TYPE_DECODE_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+"""A connection to a list of `BuilderHistory` values."""
+type BuilderHistoriesConnection {
+  """A list of `BuilderHistory` objects."""
+  nodes: [BuilderHistory]!
+
+  """
+  A list of edges which contains the `BuilderHistory` and cursor to aid in pagination.
+  """
+  edges: [BuilderHistoriesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """
+  The count of *all* `BuilderHistory` you could get from the connection.
+  """
+  totalCount: Int
+}
+
+"""A `BuilderHistory` edge in the connection."""
+type BuilderHistoriesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `BuilderHistory` at the end of the edge."""
+  node: BuilderHistory
+}
+
+"""Methods to use when ordering `BuilderHistory`."""
+enum BuilderHistoriesOrderBy {
+  NATURAL
+  BUILDER_CODE_ASC
+  BUILDER_CODE_DESC
+  BUILDER_HISTORY_ASC
+  BUILDER_HISTORY_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+type BuilderHistory {
+  builderCode: String
+  builderHistory: String
+  createDate: Date
+}
+
+"""
+A condition to be used against `BuilderHistory` object types. All fields are
+tested for equality and combined with a logical ‘and.’
+"""
+input BuilderHistoryCondition {
+  """Checks for equality with the object’s `builderCode` field."""
+  builderCode: String
+
+  """Checks for equality with the object’s `builderHistory` field."""
+  builderHistory: String
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `BuilderHistory`"""
+input BuilderHistoryInput {
+  builderCode: String
+  builderHistory: String
+  createDate: Date
+}
+
+"""A connection to a list of `Capacity` values."""
+type CapacitiesConnection {
+  """A list of `Capacity` objects."""
+  nodes: [Capacity]!
+
+  """
+  A list of edges which contains the `Capacity` and cursor to aid in pagination.
+  """
+  edges: [CapacitiesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """The count of *all* `Capacity` you could get from the connection."""
+  totalCount: Int
+}
+
+"""A `Capacity` edge in the connection."""
+type CapacitiesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `Capacity` at the end of the edge."""
+  node: Capacity
+}
+
+"""Methods to use when ordering `Capacity`."""
+enum CapacitiesOrderBy {
+  NATURAL
+  LRNO_ASC
+  LRNO_DESC
+  BALE_ASC
+  BALE_DESC
+  HORSEPOWER_ASC
+  HORSEPOWER_DESC
+  NUMBER_OF_BARGES_ASC
+  NUMBER_OF_BARGES_DESC
+  BOLLARD_PULL_ASC
+  BOLLARD_PULL_DESC
+  NUMBER_OF_CARS_ASC
+  NUMBER_OF_CARS_DESC
+  GAS_CAPACITY_ASC
+  GAS_CAPACITY_DESC
+  GRAIN_CAPACITY_ASC
+  GRAIN_CAPACITY_DESC
+  INDICATED_HORSEPOWER_ASC
+  INDICATED_HORSEPOWER_DESC
+  LIQUID_CAPACITY_ASC
+  LIQUID_CAPACITY_DESC
+  NUMBER_OF_PASSENGERS_ASC
+  NUMBER_OF_PASSENGERS_DESC
+  NUMBER_REFRIGERATED_CONTAINERS_ASC
+  NUMBER_REFRIGERATED_CONTAINERS_DESC
+  NUMBER_OF_TEU_ASC
+  NUMBER_OF_TEU_DESC
+  NUMBER_OF_TRUCKS_ASC
+  NUMBER_OF_TRUCKS_DESC
+  NUMBER_OF_VEHICLES_ASC
+  NUMBER_OF_VEHICLES_DESC
+  NUMBER_OF_RAIL_WAGONS_ASC
+  NUMBER_OF_RAIL_WAGONS_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+type Capacity {
+  lrno: String
+  bale: Int
+  horsepower: Int
+  numberOfBarges: Int
+  bollardPull: Int
+  numberOfCars: Int
+  gasCapacity: Int
+  grainCapacity: Int
+  indicatedHorsepower: Int
+  liquidCapacity: Int
+  numberOfPassengers: Int
+  numberRefrigeratedContainers: Int
+  numberOfTeu: Int
+  numberOfTrucks: Int
+  numberOfVehicles: Int
+  numberOfRailWagons: Int
+  createDate: Date
+}
+
+"""
+A condition to be used against `Capacity` object types. All fields are tested
+for equality and combined with a logical ‘and.’
+"""
+input CapacityCondition {
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `bale` field."""
+  bale: Int
+
+  """Checks for equality with the object’s `horsepower` field."""
+  horsepower: Int
+
+  """Checks for equality with the object’s `numberOfBarges` field."""
+  numberOfBarges: Int
+
+  """Checks for equality with the object’s `bollardPull` field."""
+  bollardPull: Int
+
+  """Checks for equality with the object’s `numberOfCars` field."""
+  numberOfCars: Int
+
+  """Checks for equality with the object’s `gasCapacity` field."""
+  gasCapacity: Int
+
+  """Checks for equality with the object’s `grainCapacity` field."""
+  grainCapacity: Int
+
+  """Checks for equality with the object’s `indicatedHorsepower` field."""
+  indicatedHorsepower: Int
+
+  """Checks for equality with the object’s `liquidCapacity` field."""
+  liquidCapacity: Int
+
+  """Checks for equality with the object’s `numberOfPassengers` field."""
+  numberOfPassengers: Int
+
+  """
+  Checks for equality with the object’s `numberRefrigeratedContainers` field.
+  """
+  numberRefrigeratedContainers: Int
+
+  """Checks for equality with the object’s `numberOfTeu` field."""
+  numberOfTeu: Int
+
+  """Checks for equality with the object’s `numberOfTrucks` field."""
+  numberOfTrucks: Int
+
+  """Checks for equality with the object’s `numberOfVehicles` field."""
+  numberOfVehicles: Int
+
+  """Checks for equality with the object’s `numberOfRailWagons` field."""
+  numberOfRailWagons: Int
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `Capacity`"""
+input CapacityInput {
+  lrno: String
+  bale: Int
+  horsepower: Int
+  numberOfBarges: Int
+  bollardPull: Int
+  numberOfCars: Int
+  gasCapacity: Int
+  grainCapacity: Int
+  indicatedHorsepower: Int
+  liquidCapacity: Int
+  numberOfPassengers: Int
+  numberRefrigeratedContainers: Int
+  numberOfTeu: Int
+  numberOfTrucks: Int
+  numberOfVehicles: Int
+  numberOfRailWagons: Int
+  createDate: Date
+}
+
+"""A connection to a list of `ClassHistory` values."""
+type ClassHistoriesConnection {
+  """A list of `ClassHistory` objects."""
+  nodes: [ClassHistory]!
+
+  """
+  A list of edges which contains the `ClassHistory` and cursor to aid in pagination.
+  """
+  edges: [ClassHistoriesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """The count of *all* `ClassHistory` you could get from the connection."""
+  totalCount: Int
+}
+
+"""A `ClassHistory` edge in the connection."""
+type ClassHistoriesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `ClassHistory` at the end of the edge."""
+  node: ClassHistory
+}
+
+"""Methods to use when ordering `ClassHistory`."""
+enum ClassHistoriesOrderBy {
+  NATURAL
+  LRNO_ASC
+  LRNO_DESC
+  SEQUENCE_ASC
+  SEQUENCE_DESC
+  CURRENT_INDICATOR_ASC
+  CURRENT_INDICATOR_DESC
+  EFFECTIVE_DATE_ASC
+  EFFECTIVE_DATE_DESC
+  CLASS_ASC
+  CLASS_DESC
+  CLASS_ID_ASC
+  CLASS_ID_DESC
+  CLASS_CODE_ASC
+  CLASS_CODE_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+  CLASS_INDICATOR_ASC
+  CLASS_INDICATOR_DESC
+}
+
+type ClassHistory {
+  lrno: String
+  sequence: String
+  currentIndicator: String
+  effectiveDate: String
+  class: String
+  classId: String
+  classCode: String
+  createDate: Date
+  classIndicator: String
+}
+
+"""
+A condition to be used against `ClassHistory` object types. All fields are
+tested for equality and combined with a logical ‘and.’
+"""
+input ClassHistoryCondition {
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `sequence` field."""
+  sequence: String
+
+  """Checks for equality with the object’s `currentIndicator` field."""
+  currentIndicator: String
+
+  """Checks for equality with the object’s `effectiveDate` field."""
+  effectiveDate: String
+
+  """Checks for equality with the object’s `class` field."""
+  class: String
+
+  """Checks for equality with the object’s `classId` field."""
+  classId: String
+
+  """Checks for equality with the object’s `classCode` field."""
+  classCode: String
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+
+  """Checks for equality with the object’s `classIndicator` field."""
+  classIndicator: String
+}
+
+"""An input for mutations affecting `ClassHistory`"""
+input ClassHistoryInput {
+  lrno: String
+  sequence: String
+  currentIndicator: String
+  effectiveDate: String
+  class: String
+  classId: String
+  classCode: String
+  createDate: Date
+  classIndicator: String
+}
+
+type ClassWithdrawn {
+  lrno: String
+  class: String
+  withdrawnDate: String
+  reason: String
+  createDate: Date
+}
+
+"""
+A condition to be used against `ClassWithdrawn` object types. All fields are
+tested for equality and combined with a logical ‘and.’
+"""
+input ClassWithdrawnCondition {
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `class` field."""
+  class: String
+
+  """Checks for equality with the object’s `withdrawnDate` field."""
+  withdrawnDate: String
+
+  """Checks for equality with the object’s `reason` field."""
+  reason: String
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `ClassWithdrawn`"""
+input ClassWithdrawnInput {
+  lrno: String
+  class: String
+  withdrawnDate: String
+  reason: String
+  createDate: Date
+}
+
+"""A connection to a list of `ClassWithdrawn` values."""
+type ClassWithdrawnsConnection {
+  """A list of `ClassWithdrawn` objects."""
+  nodes: [ClassWithdrawn]!
+
+  """
+  A list of edges which contains the `ClassWithdrawn` and cursor to aid in pagination.
+  """
+  edges: [ClassWithdrawnsEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """
+  The count of *all* `ClassWithdrawn` you could get from the connection.
+  """
+  totalCount: Int
+}
+
+"""A `ClassWithdrawn` edge in the connection."""
+type ClassWithdrawnsEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `ClassWithdrawn` at the end of the edge."""
+  node: ClassWithdrawn
+}
+
+"""Methods to use when ordering `ClassWithdrawn`."""
+enum ClassWithdrawnsOrderBy {
+  NATURAL
+  LRNO_ASC
+  LRNO_DESC
+  CLASS_ASC
+  CLASS_DESC
+  WITHDRAWN_DATE_ASC
+  WITHDRAWN_DATE_DESC
+  REASON_ASC
+  REASON_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+type CompanyFullDetailsAndParentCode {
+  owcode: String
+  shortCompanyName: String
+  countryName: String
+  townName: String
+  telephone: String
+  telex: String
+  emailaddress: String
+  website: String
+  careOfCode: String
+  roomFloorBuilding1: String
+  roomFloorBuilding2: String
+  roomFloorBuilding3: String
+  poBox: String
+  streetNumber: String
+  street: String
+  prePostcode: String
+  postPostcode: String
+  lastChangeDate: String
+  parentCompany: String
+  nationalityofRegistration: String
+  nationalityofControl: String
+  companyStatus: String
+  fullCompanyName: String
+  fullAddress: String
+  facsimile: String
+  createDate: Date
+}
+
+"""
+A condition to be used against `CompanyFullDetailsAndParentCode` object types.
+All fields are tested for equality and combined with a logical ‘and.’
+"""
+input CompanyFullDetailsAndParentCodeCondition {
+  """Checks for equality with the object’s `owcode` field."""
+  owcode: String
+
+  """Checks for equality with the object’s `shortCompanyName` field."""
+  shortCompanyName: String
+
+  """Checks for equality with the object’s `countryName` field."""
+  countryName: String
+
+  """Checks for equality with the object’s `townName` field."""
+  townName: String
+
+  """Checks for equality with the object’s `telephone` field."""
+  telephone: String
+
+  """Checks for equality with the object’s `telex` field."""
+  telex: String
+
+  """Checks for equality with the object’s `emailaddress` field."""
+  emailaddress: String
+
+  """Checks for equality with the object’s `website` field."""
+  website: String
+
+  """Checks for equality with the object’s `careOfCode` field."""
+  careOfCode: String
+
+  """Checks for equality with the object’s `roomFloorBuilding1` field."""
+  roomFloorBuilding1: String
+
+  """Checks for equality with the object’s `roomFloorBuilding2` field."""
+  roomFloorBuilding2: String
+
+  """Checks for equality with the object’s `roomFloorBuilding3` field."""
+  roomFloorBuilding3: String
+
+  """Checks for equality with the object’s `poBox` field."""
+  poBox: String
+
+  """Checks for equality with the object’s `streetNumber` field."""
+  streetNumber: String
+
+  """Checks for equality with the object’s `street` field."""
+  street: String
+
+  """Checks for equality with the object’s `prePostcode` field."""
+  prePostcode: String
+
+  """Checks for equality with the object’s `postPostcode` field."""
+  postPostcode: String
+
+  """Checks for equality with the object’s `lastChangeDate` field."""
+  lastChangeDate: String
+
+  """Checks for equality with the object’s `parentCompany` field."""
+  parentCompany: String
+
+  """
+  Checks for equality with the object’s `nationalityofRegistration` field.
+  """
+  nationalityofRegistration: String
+
+  """Checks for equality with the object’s `nationalityofControl` field."""
+  nationalityofControl: String
+
+  """Checks for equality with the object’s `companyStatus` field."""
+  companyStatus: String
+
+  """Checks for equality with the object’s `fullCompanyName` field."""
+  fullCompanyName: String
+
+  """Checks for equality with the object’s `fullAddress` field."""
+  fullAddress: String
+
+  """Checks for equality with the object’s `facsimile` field."""
+  facsimile: String
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `CompanyFullDetailsAndParentCode`"""
+input CompanyFullDetailsAndParentCodeInput {
+  owcode: String
+  shortCompanyName: String
+  countryName: String
+  townName: String
+  telephone: String
+  telex: String
+  emailaddress: String
+  website: String
+  careOfCode: String
+  roomFloorBuilding1: String
+  roomFloorBuilding2: String
+  roomFloorBuilding3: String
+  poBox: String
+  streetNumber: String
+  street: String
+  prePostcode: String
+  postPostcode: String
+  lastChangeDate: String
+  parentCompany: String
+  nationalityofRegistration: String
+  nationalityofControl: String
+  companyStatus: String
+  fullCompanyName: String
+  fullAddress: String
+  facsimile: String
+  createDate: Date
+}
+
+"""A connection to a list of `CompanyFullDetailsAndParentCode` values."""
+type CompanyFullDetailsAndParentCodesConnection {
+  """A list of `CompanyFullDetailsAndParentCode` objects."""
+  nodes: [CompanyFullDetailsAndParentCode]!
+
+  """
+  A list of edges which contains the `CompanyFullDetailsAndParentCode` and cursor to aid in pagination.
+  """
+  edges: [CompanyFullDetailsAndParentCodesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """
+  The count of *all* `CompanyFullDetailsAndParentCode` you could get from the connection.
+  """
+  totalCount: Int
+}
+
+"""A `CompanyFullDetailsAndParentCode` edge in the connection."""
+type CompanyFullDetailsAndParentCodesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `CompanyFullDetailsAndParentCode` at the end of the edge."""
+  node: CompanyFullDetailsAndParentCode
+}
+
+"""Methods to use when ordering `CompanyFullDetailsAndParentCode`."""
+enum CompanyFullDetailsAndParentCodesOrderBy {
+  NATURAL
+  OWCODE_ASC
+  OWCODE_DESC
+  SHORT_COMPANY_NAME_ASC
+  SHORT_COMPANY_NAME_DESC
+  COUNTRY_NAME_ASC
+  COUNTRY_NAME_DESC
+  TOWN_NAME_ASC
+  TOWN_NAME_DESC
+  TELEPHONE_ASC
+  TELEPHONE_DESC
+  TELEX_ASC
+  TELEX_DESC
+  EMAILADDRESS_ASC
+  EMAILADDRESS_DESC
+  WEBSITE_ASC
+  WEBSITE_DESC
+  CARE_OF_CODE_ASC
+  CARE_OF_CODE_DESC
+  ROOM_FLOOR_BUILDING1_ASC
+  ROOM_FLOOR_BUILDING1_DESC
+  ROOM_FLOOR_BUILDING2_ASC
+  ROOM_FLOOR_BUILDING2_DESC
+  ROOM_FLOOR_BUILDING3_ASC
+  ROOM_FLOOR_BUILDING3_DESC
+  POBOX_ASC
+  POBOX_DESC
+  STREET_NUMBER_ASC
+  STREET_NUMBER_DESC
+  STREET_ASC
+  STREET_DESC
+  PRE_POSTCODE_ASC
+  PRE_POSTCODE_DESC
+  POST_POSTCODE_ASC
+  POST_POSTCODE_DESC
+  LAST_CHANGE_DATE_ASC
+  LAST_CHANGE_DATE_DESC
+  PARENT_COMPANY_ASC
+  PARENT_COMPANY_DESC
+  NATIONALITYOF_REGISTRATION_ASC
+  NATIONALITYOF_REGISTRATION_DESC
+  NATIONALITYOF_CONTROL_ASC
+  NATIONALITYOF_CONTROL_DESC
+  COMPANY_STATUS_ASC
+  COMPANY_STATUS_DESC
+  FULL_COMPANY_NAME_ASC
+  FULL_COMPANY_NAME_DESC
+  FULL_ADDRESS_ASC
+  FULL_ADDRESS_DESC
+  FACSIMILE_ASC
+  FACSIMILE_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+type CompanyVesselRelationship {
+  lrno: String
+  registeredOwnerCode: String
+  registeredOwner: String
+  shipManagerCode: String
+  shipManager: String
+  operatorCode: String
+  operator: String
+  groupBeneficialOwnerCode: String
+  groupBeneficialOwner: String
+  docCode: String
+  docCompany: String
+  technicalManagerCode: String
+  technicalManager: String
+  operatorGroupCode: String
+  operatorGroup: String
+  shipManagerGroup: String
+  docGroupCode: String
+  docGroup: String
+  technicalManagerGroupCode: String
+  technicalManagerGroup: String
+  shipManagerGroupCode: String
+  createDate: Date
+}
+
+"""
+A condition to be used against `CompanyVesselRelationship` object types. All
+fields are tested for equality and combined with a logical ‘and.’
+"""
+input CompanyVesselRelationshipCondition {
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `registeredOwnerCode` field."""
+  registeredOwnerCode: String
+
+  """Checks for equality with the object’s `registeredOwner` field."""
+  registeredOwner: String
+
+  """Checks for equality with the object’s `shipManagerCode` field."""
+  shipManagerCode: String
+
+  """Checks for equality with the object’s `shipManager` field."""
+  shipManager: String
+
+  """Checks for equality with the object’s `operatorCode` field."""
+  operatorCode: String
+
+  """Checks for equality with the object’s `operator` field."""
+  operator: String
+
+  """
+  Checks for equality with the object’s `groupBeneficialOwnerCode` field.
+  """
+  groupBeneficialOwnerCode: String
+
+  """Checks for equality with the object’s `groupBeneficialOwner` field."""
+  groupBeneficialOwner: String
+
+  """Checks for equality with the object’s `docCode` field."""
+  docCode: String
+
+  """Checks for equality with the object’s `docCompany` field."""
+  docCompany: String
+
+  """Checks for equality with the object’s `technicalManagerCode` field."""
+  technicalManagerCode: String
+
+  """Checks for equality with the object’s `technicalManager` field."""
+  technicalManager: String
+
+  """Checks for equality with the object’s `operatorGroupCode` field."""
+  operatorGroupCode: String
+
+  """Checks for equality with the object’s `operatorGroup` field."""
+  operatorGroup: String
+
+  """Checks for equality with the object’s `shipManagerGroup` field."""
+  shipManagerGroup: String
+
+  """Checks for equality with the object’s `docGroupCode` field."""
+  docGroupCode: String
+
+  """Checks for equality with the object’s `docGroup` field."""
+  docGroup: String
+
+  """
+  Checks for equality with the object’s `technicalManagerGroupCode` field.
+  """
+  technicalManagerGroupCode: String
+
+  """Checks for equality with the object’s `technicalManagerGroup` field."""
+  technicalManagerGroup: String
+
+  """Checks for equality with the object’s `shipManagerGroupCode` field."""
+  shipManagerGroupCode: String
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `CompanyVesselRelationship`"""
+input CompanyVesselRelationshipInput {
+  lrno: String
+  registeredOwnerCode: String
+  registeredOwner: String
+  shipManagerCode: String
+  shipManager: String
+  operatorCode: String
+  operator: String
+  groupBeneficialOwnerCode: String
+  groupBeneficialOwner: String
+  docCode: String
+  docCompany: String
+  technicalManagerCode: String
+  technicalManager: String
+  operatorGroupCode: String
+  operatorGroup: String
+  shipManagerGroup: String
+  docGroupCode: String
+  docGroup: String
+  technicalManagerGroupCode: String
+  technicalManagerGroup: String
+  shipManagerGroupCode: String
+  createDate: Date
+}
+
+"""A connection to a list of `CompanyVesselRelationship` values."""
+type CompanyVesselRelationshipsConnection {
+  """A list of `CompanyVesselRelationship` objects."""
+  nodes: [CompanyVesselRelationship]!
+
+  """
+  A list of edges which contains the `CompanyVesselRelationship` and cursor to aid in pagination.
+  """
+  edges: [CompanyVesselRelationshipsEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """
+  The count of *all* `CompanyVesselRelationship` you could get from the connection.
+  """
+  totalCount: Int
+}
+
+"""A `CompanyVesselRelationship` edge in the connection."""
+type CompanyVesselRelationshipsEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `CompanyVesselRelationship` at the end of the edge."""
+  node: CompanyVesselRelationship
+}
+
+"""Methods to use when ordering `CompanyVesselRelationship`."""
+enum CompanyVesselRelationshipsOrderBy {
+  NATURAL
+  LRNO_ASC
+  LRNO_DESC
+  REGISTERED_OWNER_CODE_ASC
+  REGISTERED_OWNER_CODE_DESC
+  REGISTERED_OWNER_ASC
+  REGISTERED_OWNER_DESC
+  SHIP_MANAGER_CODE_ASC
+  SHIP_MANAGER_CODE_DESC
+  SHIP_MANAGER_ASC
+  SHIP_MANAGER_DESC
+  OPERATOR_CODE_ASC
+  OPERATOR_CODE_DESC
+  OPERATOR_ASC
+  OPERATOR_DESC
+  GROUP_BENEFICIAL_OWNER_CODE_ASC
+  GROUP_BENEFICIAL_OWNER_CODE_DESC
+  GROUP_BENEFICIAL_OWNER_ASC
+  GROUP_BENEFICIAL_OWNER_DESC
+  DOCCODE_ASC
+  DOCCODE_DESC
+  DOCCOMPANY_ASC
+  DOCCOMPANY_DESC
+  TECHNICAL_MANAGER_CODE_ASC
+  TECHNICAL_MANAGER_CODE_DESC
+  TECHNICAL_MANAGER_ASC
+  TECHNICAL_MANAGER_DESC
+  OPERATOR_GROUP_CODE_ASC
+  OPERATOR_GROUP_CODE_DESC
+  OPERATOR_GROUP_ASC
+  OPERATOR_GROUP_DESC
+  SHIP_MANAGER_GROUP_ASC
+  SHIP_MANAGER_GROUP_DESC
+  DOCGROUP_CODE_ASC
+  DOCGROUP_CODE_DESC
+  DOCGROUP_ASC
+  DOCGROUP_DESC
+  TECHNICAL_MANAGER_GROUP_CODE_ASC
+  TECHNICAL_MANAGER_GROUP_CODE_DESC
+  TECHNICAL_MANAGER_GROUP_ASC
+  TECHNICAL_MANAGER_GROUP_DESC
+  SHIP_MANAGER_GROUP_CODE_ASC
+  SHIP_MANAGER_GROUP_CODE_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+"""All input for the create `AuxEngine` mutation."""
+input CreateAuxEngineInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `AuxEngine` to be created by this mutation."""
+  auxEngine: AuxEngineInput!
+}
+
+"""The output of our create `AuxEngine` mutation."""
+type CreateAuxEnginePayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `AuxEngine` that was created by this mutation."""
+  auxEngine: AuxEngine
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `AuxEngine`. May be used by Relay 1."""
+  auxEngineEdge(
+    """The method to use when ordering `AuxEngine`."""
+    orderBy: [AuxEnginesOrderBy!] = NATURAL
+  ): AuxEnginesEdge
+}
+
+"""All input for the create `AuxiliaryGenerator` mutation."""
+input CreateAuxiliaryGeneratorInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `AuxiliaryGenerator` to be created by this mutation."""
+  auxiliaryGenerator: AuxiliaryGeneratorInput!
+}
+
+"""The output of our create `AuxiliaryGenerator` mutation."""
+type CreateAuxiliaryGeneratorPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `AuxiliaryGenerator` that was created by this mutation."""
+  auxiliaryGenerator: AuxiliaryGenerator
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `AuxiliaryGenerator`. May be used by Relay 1."""
+  auxiliaryGeneratorEdge(
+    """The method to use when ordering `AuxiliaryGenerator`."""
+    orderBy: [AuxiliaryGeneratorsOrderBy!] = NATURAL
+  ): AuxiliaryGeneratorsEdge
+}
+
+"""All input for the create `BoilersExpanded` mutation."""
+input CreateBoilersExpandedInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `BoilersExpanded` to be created by this mutation."""
+  boilersExpanded: BoilersExpandedInput!
+}
+
+"""The output of our create `BoilersExpanded` mutation."""
+type CreateBoilersExpandedPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `BoilersExpanded` that was created by this mutation."""
+  boilersExpanded: BoilersExpanded
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `BoilersExpanded`. May be used by Relay 1."""
+  boilersExpandedEdge(
+    """The method to use when ordering `BoilersExpanded`."""
+    orderBy: [BoilersExpandedsOrderBy!] = NATURAL
+  ): BoilersExpandedsEdge
+}
+
+"""All input for the create `BuilderHistory` mutation."""
+input CreateBuilderHistoryInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `BuilderHistory` to be created by this mutation."""
+  builderHistory: BuilderHistoryInput!
+}
+
+"""The output of our create `BuilderHistory` mutation."""
+type CreateBuilderHistoryPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `BuilderHistory` that was created by this mutation."""
+  builderHistory: BuilderHistory
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `BuilderHistory`. May be used by Relay 1."""
+  builderHistoryEdge(
+    """The method to use when ordering `BuilderHistory`."""
+    orderBy: [BuilderHistoriesOrderBy!] = NATURAL
+  ): BuilderHistoriesEdge
+}
+
+"""All input for the create `Capacity` mutation."""
+input CreateCapacityInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `Capacity` to be created by this mutation."""
+  capacity: CapacityInput!
+}
+
+"""The output of our create `Capacity` mutation."""
+type CreateCapacityPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `Capacity` that was created by this mutation."""
+  capacity: Capacity
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `Capacity`. May be used by Relay 1."""
+  capacityEdge(
+    """The method to use when ordering `Capacity`."""
+    orderBy: [CapacitiesOrderBy!] = NATURAL
+  ): CapacitiesEdge
+}
+
+"""All input for the create `ClassHistory` mutation."""
+input CreateClassHistoryInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `ClassHistory` to be created by this mutation."""
+  classHistory: ClassHistoryInput!
+}
+
+"""The output of our create `ClassHistory` mutation."""
+type CreateClassHistoryPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `ClassHistory` that was created by this mutation."""
+  classHistory: ClassHistory
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `ClassHistory`. May be used by Relay 1."""
+  classHistoryEdge(
+    """The method to use when ordering `ClassHistory`."""
+    orderBy: [ClassHistoriesOrderBy!] = NATURAL
+  ): ClassHistoriesEdge
+}
+
+"""All input for the create `ClassWithdrawn` mutation."""
+input CreateClassWithdrawnInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `ClassWithdrawn` to be created by this mutation."""
+  classWithdrawn: ClassWithdrawnInput!
+}
+
+"""The output of our create `ClassWithdrawn` mutation."""
+type CreateClassWithdrawnPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `ClassWithdrawn` that was created by this mutation."""
+  classWithdrawn: ClassWithdrawn
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `ClassWithdrawn`. May be used by Relay 1."""
+  classWithdrawnEdge(
+    """The method to use when ordering `ClassWithdrawn`."""
+    orderBy: [ClassWithdrawnsOrderBy!] = NATURAL
+  ): ClassWithdrawnsEdge
+}
+
+"""All input for the create `CompanyFullDetailsAndParentCode` mutation."""
+input CreateCompanyFullDetailsAndParentCodeInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `CompanyFullDetailsAndParentCode` to be created by this mutation."""
+  companyFullDetailsAndParentCode: CompanyFullDetailsAndParentCodeInput!
+}
+
+"""The output of our create `CompanyFullDetailsAndParentCode` mutation."""
+type CreateCompanyFullDetailsAndParentCodePayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """
+  The `CompanyFullDetailsAndParentCode` that was created by this mutation.
+  """
+  companyFullDetailsAndParentCode: CompanyFullDetailsAndParentCode
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """
+  An edge for our `CompanyFullDetailsAndParentCode`. May be used by Relay 1.
+  """
+  companyFullDetailsAndParentCodeEdge(
+    """The method to use when ordering `CompanyFullDetailsAndParentCode`."""
+    orderBy: [CompanyFullDetailsAndParentCodesOrderBy!] = NATURAL
+  ): CompanyFullDetailsAndParentCodesEdge
+}
+
+"""All input for the create `CompanyVesselRelationship` mutation."""
+input CreateCompanyVesselRelationshipInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `CompanyVesselRelationship` to be created by this mutation."""
+  companyVesselRelationship: CompanyVesselRelationshipInput!
+}
+
+"""The output of our create `CompanyVesselRelationship` mutation."""
+type CreateCompanyVesselRelationshipPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `CompanyVesselRelationship` that was created by this mutation."""
+  companyVesselRelationship: CompanyVesselRelationship
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `CompanyVesselRelationship`. May be used by Relay 1."""
+  companyVesselRelationshipEdge(
+    """The method to use when ordering `CompanyVesselRelationship`."""
+    orderBy: [CompanyVesselRelationshipsOrderBy!] = NATURAL
+  ): CompanyVesselRelationshipsEdge
+}
+
+"""All input for the create `CrewList` mutation."""
+input CreateCrewListInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `CrewList` to be created by this mutation."""
+  crewList: CrewListInput!
+}
+
+"""The output of our create `CrewList` mutation."""
+type CreateCrewListPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `CrewList` that was created by this mutation."""
+  crewList: CrewList
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `CrewList`. May be used by Relay 1."""
+  crewListEdge(
+    """The method to use when ordering `CrewList`."""
+    orderBy: [CrewListsOrderBy!] = NATURAL
+  ): CrewListsEdge
+}
+
+"""All input for the create `DocHistory` mutation."""
+input CreateDocHistoryInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `DocHistory` to be created by this mutation."""
+  docHistory: DocHistoryInput!
+}
+
+"""The output of our create `DocHistory` mutation."""
+type CreateDocHistoryPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `DocHistory` that was created by this mutation."""
+  docHistory: DocHistory
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `DocHistory`. May be used by Relay 1."""
+  docHistoryEdge(
+    """The method to use when ordering `DocHistory`."""
+    orderBy: [DocHistoriesOrderBy!] = NATURAL
+  ): DocHistoriesEdge
+}
+
+"""All input for the create `FlagHistory` mutation."""
+input CreateFlagHistoryInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `FlagHistory` to be created by this mutation."""
+  flagHistory: FlagHistoryInput!
+}
+
+"""The output of our create `FlagHistory` mutation."""
+type CreateFlagHistoryPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `FlagHistory` that was created by this mutation."""
+  flagHistory: FlagHistory
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `FlagHistory`. May be used by Relay 1."""
+  flagHistoryEdge(
+    """The method to use when ordering `FlagHistory`."""
+    orderBy: [FlagHistoriesOrderBy!] = NATURAL
+  ): FlagHistoriesEdge
+}
+
+"""All input for the create `GroupBeneficialOwnerHistory` mutation."""
+input CreateGroupBeneficialOwnerHistoryInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `GroupBeneficialOwnerHistory` to be created by this mutation."""
+  groupBeneficialOwnerHistory: GroupBeneficialOwnerHistoryInput!
+}
+
+"""The output of our create `GroupBeneficialOwnerHistory` mutation."""
+type CreateGroupBeneficialOwnerHistoryPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `GroupBeneficialOwnerHistory` that was created by this mutation."""
+  groupBeneficialOwnerHistory: GroupBeneficialOwnerHistory
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """
+  An edge for our `GroupBeneficialOwnerHistory`. May be used by Relay 1.
+  """
+  groupBeneficialOwnerHistoryEdge(
+    """The method to use when ordering `GroupBeneficialOwnerHistory`."""
+    orderBy: [GroupBeneficialOwnerHistoriesOrderBy!] = NATURAL
+  ): GroupBeneficialOwnerHistoriesEdge
+}
+
+"""All input for the create `MainEngine` mutation."""
+input CreateMainEngineInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `MainEngine` to be created by this mutation."""
+  mainEngine: MainEngineInput!
+}
+
+"""The output of our create `MainEngine` mutation."""
+type CreateMainEnginePayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `MainEngine` that was created by this mutation."""
+  mainEngine: MainEngine
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `MainEngine`. May be used by Relay 1."""
+  mainEngineEdge(
+    """The method to use when ordering `MainEngine`."""
+    orderBy: [MainEnginesOrderBy!] = NATURAL
+  ): MainEnginesEdge
+}
+
+"""All input for the create `MainGenerator` mutation."""
+input CreateMainGeneratorInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `MainGenerator` to be created by this mutation."""
+  mainGenerator: MainGeneratorInput!
+}
+
+"""The output of our create `MainGenerator` mutation."""
+type CreateMainGeneratorPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `MainGenerator` that was created by this mutation."""
+  mainGenerator: MainGenerator
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `MainGenerator`. May be used by Relay 1."""
+  mainGeneratorEdge(
+    """The method to use when ordering `MainGenerator`."""
+    orderBy: [MainGeneratorsOrderBy!] = NATURAL
+  ): MainGeneratorsEdge
+}
+
+"""All input for the create `NameHistory` mutation."""
+input CreateNameHistoryInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `NameHistory` to be created by this mutation."""
+  nameHistory: NameHistoryInput!
+}
+
+"""The output of our create `NameHistory` mutation."""
+type CreateNameHistoryPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `NameHistory` that was created by this mutation."""
+  nameHistory: NameHistory
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `NameHistory`. May be used by Relay 1."""
+  nameHistoryEdge(
+    """The method to use when ordering `NameHistory`."""
+    orderBy: [NameHistoriesOrderBy!] = NATURAL
+  ): NameHistoriesEdge
+}
+
+"""All input for the create `OperatorHistory` mutation."""
+input CreateOperatorHistoryInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `OperatorHistory` to be created by this mutation."""
+  operatorHistory: OperatorHistoryInput!
+}
+
+"""The output of our create `OperatorHistory` mutation."""
+type CreateOperatorHistoryPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `OperatorHistory` that was created by this mutation."""
+  operatorHistory: OperatorHistory
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `OperatorHistory`. May be used by Relay 1."""
+  operatorHistoryEdge(
+    """The method to use when ordering `OperatorHistory`."""
+    orderBy: [OperatorHistoriesOrderBy!] = NATURAL
+  ): OperatorHistoriesEdge
+}
+
+"""All input for the create `PAndIHistory` mutation."""
+input CreatePAndIHistoryInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `PAndIHistory` to be created by this mutation."""
+  pAndIHistory: PAndIHistoryInput!
+}
+
+"""The output of our create `PAndIHistory` mutation."""
+type CreatePAndIHistoryPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `PAndIHistory` that was created by this mutation."""
+  pAndIHistory: PAndIHistory
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `PAndIHistory`. May be used by Relay 1."""
+  pAndIHistoryEdge(
+    """The method to use when ordering `PAndIHistory`."""
+    orderBy: [PAndIHistoriesOrderBy!] = NATURAL
+  ): PAndIHistoriesEdge
+}
+
+"""All input for the create `RegisteredOwnerHistory` mutation."""
+input CreateRegisteredOwnerHistoryInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `RegisteredOwnerHistory` to be created by this mutation."""
+  registeredOwnerHistory: RegisteredOwnerHistoryInput!
+}
+
+"""The output of our create `RegisteredOwnerHistory` mutation."""
+type CreateRegisteredOwnerHistoryPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `RegisteredOwnerHistory` that was created by this mutation."""
+  registeredOwnerHistory: RegisteredOwnerHistory
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `RegisteredOwnerHistory`. May be used by Relay 1."""
+  registeredOwnerHistoryEdge(
+    """The method to use when ordering `RegisteredOwnerHistory`."""
+    orderBy: [RegisteredOwnerHistoriesOrderBy!] = NATURAL
+  ): RegisteredOwnerHistoriesEdge
+}
+
+"""All input for the create `ShipData` mutation."""
+input CreateShipDataInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `ShipData` to be created by this mutation."""
+  shipData: ShipDataInput!
+}
+
+"""The output of our create `ShipData` mutation."""
+type CreateShipDataPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `ShipData` that was created by this mutation."""
+  shipData: ShipData
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `ShipData`. May be used by Relay 1."""
+  shipDataEdge(
+    """The method to use when ordering `ShipData`."""
+    orderBy: [ShipDataOrderBy!] = PRIMARY_KEY_ASC
+  ): ShipDataEdge
+}
+
+"""All input for the create `ShipManagerHistory` mutation."""
+input CreateShipManagerHistoryInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `ShipManagerHistory` to be created by this mutation."""
+  shipManagerHistory: ShipManagerHistoryInput!
+}
+
+"""The output of our create `ShipManagerHistory` mutation."""
+type CreateShipManagerHistoryPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `ShipManagerHistory` that was created by this mutation."""
+  shipManagerHistory: ShipManagerHistory
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `ShipManagerHistory`. May be used by Relay 1."""
+  shipManagerHistoryEdge(
+    """The method to use when ordering `ShipManagerHistory`."""
+    orderBy: [ShipManagerHistoriesOrderBy!] = NATURAL
+  ): ShipManagerHistoriesEdge
+}
+
+"""All input for the create `SpecialFeature` mutation."""
+input CreateSpecialFeatureInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `SpecialFeature` to be created by this mutation."""
+  specialFeature: SpecialFeatureInput!
+}
+
+"""The output of our create `SpecialFeature` mutation."""
+type CreateSpecialFeaturePayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `SpecialFeature` that was created by this mutation."""
+  specialFeature: SpecialFeature
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `SpecialFeature`. May be used by Relay 1."""
+  specialFeatureEdge(
+    """The method to use when ordering `SpecialFeature`."""
+    orderBy: [SpecialFeaturesOrderBy!] = NATURAL
+  ): SpecialFeaturesEdge
+}
+
+"""All input for the create `StatusHistory` mutation."""
+input CreateStatusHistoryInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `StatusHistory` to be created by this mutation."""
+  statusHistory: StatusHistoryInput!
+}
+
+"""The output of our create `StatusHistory` mutation."""
+type CreateStatusHistoryPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `StatusHistory` that was created by this mutation."""
+  statusHistory: StatusHistory
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `StatusHistory`. May be used by Relay 1."""
+  statusHistoryEdge(
+    """The method to use when ordering `StatusHistory`."""
+    orderBy: [StatusHistoriesOrderBy!] = NATURAL
+  ): StatusHistoriesEdge
+}
+
+"""All input for the create `SurveyDateHistory` mutation."""
+input CreateSurveyDateHistoryInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `SurveyDateHistory` to be created by this mutation."""
+  surveyDateHistory: SurveyDateHistoryInput!
+}
+
+"""The output of our create `SurveyDateHistory` mutation."""
+type CreateSurveyDateHistoryPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `SurveyDateHistory` that was created by this mutation."""
+  surveyDateHistory: SurveyDateHistory
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `SurveyDateHistory`. May be used by Relay 1."""
+  surveyDateHistoryEdge(
+    """The method to use when ordering `SurveyDateHistory`."""
+    orderBy: [SurveyDateHistoriesOrderBy!] = NATURAL
+  ): SurveyDateHistoriesEdge
+}
+
+"""All input for the create `SurveyDate` mutation."""
+input CreateSurveyDateInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `SurveyDate` to be created by this mutation."""
+  surveyDate: SurveyDateInput!
+}
+
+"""The output of our create `SurveyDate` mutation."""
+type CreateSurveyDatePayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `SurveyDate` that was created by this mutation."""
+  surveyDate: SurveyDate
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `SurveyDate`. May be used by Relay 1."""
+  surveyDateEdge(
+    """The method to use when ordering `SurveyDate`."""
+    orderBy: [SurveyDatesOrderBy!] = NATURAL
+  ): SurveyDatesEdge
+}
+
+"""All input for the create `TechnicalManagerHistory` mutation."""
+input CreateTechnicalManagerHistoryInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `TechnicalManagerHistory` to be created by this mutation."""
+  technicalManagerHistory: TechnicalManagerHistoryInput!
+}
+
+"""The output of our create `TechnicalManagerHistory` mutation."""
+type CreateTechnicalManagerHistoryPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `TechnicalManagerHistory` that was created by this mutation."""
+  technicalManagerHistory: TechnicalManagerHistory
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `TechnicalManagerHistory`. May be used by Relay 1."""
+  technicalManagerHistoryEdge(
+    """The method to use when ordering `TechnicalManagerHistory`."""
+    orderBy: [TechnicalManagerHistoriesOrderBy!] = NATURAL
+  ): TechnicalManagerHistoriesEdge
+}
+
+"""All input for the create `UnverifiedOwnership` mutation."""
+input CreateUnverifiedOwnershipInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """The `UnverifiedOwnership` to be created by this mutation."""
+  unverifiedOwnership: UnverifiedOwnershipInput!
+}
+
+"""The output of our create `UnverifiedOwnership` mutation."""
+type CreateUnverifiedOwnershipPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `UnverifiedOwnership` that was created by this mutation."""
+  unverifiedOwnership: UnverifiedOwnership
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `UnverifiedOwnership`. May be used by Relay 1."""
+  unverifiedOwnershipEdge(
+    """The method to use when ordering `UnverifiedOwnership`."""
+    orderBy: [UnverifiedOwnershipsOrderBy!] = NATURAL
+  ): UnverifiedOwnershipsEdge
+}
+
+type CrewList {
+  id: Int
+  lrno: String
+  shipname: String
+  crewListDate: String
+  nationality: String
+  totalCrew: Int
+  totalRatings: Int
+  totalOfficers: Int
+  createDate: Date
+}
+
+"""
+A condition to be used against `CrewList` object types. All fields are tested
+for equality and combined with a logical ‘and.’
+"""
+input CrewListCondition {
+  """Checks for equality with the object’s `id` field."""
+  id: Int
+
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `shipname` field."""
+  shipname: String
+
+  """Checks for equality with the object’s `crewListDate` field."""
+  crewListDate: String
+
+  """Checks for equality with the object’s `nationality` field."""
+  nationality: String
+
+  """Checks for equality with the object’s `totalCrew` field."""
+  totalCrew: Int
+
+  """Checks for equality with the object’s `totalRatings` field."""
+  totalRatings: Int
+
+  """Checks for equality with the object’s `totalOfficers` field."""
+  totalOfficers: Int
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `CrewList`"""
+input CrewListInput {
+  id: Int
+  lrno: String
+  shipname: String
+  crewListDate: String
+  nationality: String
+  totalCrew: Int
+  totalRatings: Int
+  totalOfficers: Int
+  createDate: Date
+}
+
+"""A connection to a list of `CrewList` values."""
+type CrewListsConnection {
+  """A list of `CrewList` objects."""
+  nodes: [CrewList]!
+
+  """
+  A list of edges which contains the `CrewList` and cursor to aid in pagination.
+  """
+  edges: [CrewListsEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """The count of *all* `CrewList` you could get from the connection."""
+  totalCount: Int
+}
+
+"""A `CrewList` edge in the connection."""
+type CrewListsEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `CrewList` at the end of the edge."""
+  node: CrewList
+}
+
+"""Methods to use when ordering `CrewList`."""
+enum CrewListsOrderBy {
+  NATURAL
+  ID_ASC
+  ID_DESC
+  LRNO_ASC
+  LRNO_DESC
+  SHIPNAME_ASC
+  SHIPNAME_DESC
+  CREW_LIST_DATE_ASC
+  CREW_LIST_DATE_DESC
+  NATIONALITY_ASC
+  NATIONALITY_DESC
+  TOTAL_CREW_ASC
+  TOTAL_CREW_DESC
+  TOTAL_RATINGS_ASC
+  TOTAL_RATINGS_DESC
+  TOTAL_OFFICERS_ASC
+  TOTAL_OFFICERS_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+"""A location in a connection that can be used for resuming pagination."""
+scalar Cursor
+
+"""The day, does not include a time."""
+scalar Date
+
+"""All input for the `deleteShipDataByHash` mutation."""
+input DeleteShipDataByHashInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+  hash: String!
+}
+
+"""All input for the `deleteShipData` mutation."""
+input DeleteShipDataInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  The globally unique `ID` which will identify a single `ShipData` to be deleted.
+  """
+  nodeId: ID!
+}
+
+"""The output of our delete `ShipData` mutation."""
+type DeleteShipDataPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `ShipData` that was deleted by this mutation."""
+  shipData: ShipData
+  deletedShipDataId: ID
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `ShipData`. May be used by Relay 1."""
+  shipDataEdge(
+    """The method to use when ordering `ShipData`."""
+    orderBy: [ShipDataOrderBy!] = PRIMARY_KEY_ASC
+  ): ShipDataEdge
+}
+
+"""A connection to a list of `DocHistory` values."""
+type DocHistoriesConnection {
+  """A list of `DocHistory` objects."""
+  nodes: [DocHistory]!
+
+  """
+  A list of edges which contains the `DocHistory` and cursor to aid in pagination.
+  """
+  edges: [DocHistoriesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """The count of *all* `DocHistory` you could get from the connection."""
+  totalCount: Int
+}
+
+"""A `DocHistory` edge in the connection."""
+type DocHistoriesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `DocHistory` at the end of the edge."""
+  node: DocHistory
+}
+
+"""Methods to use when ordering `DocHistory`."""
+enum DocHistoriesOrderBy {
+  NATURAL
+  LRNO_ASC
+  LRNO_DESC
+  SEQUENCE_ASC
+  SEQUENCE_DESC
+  EFFECTIVE_DATE_ASC
+  EFFECTIVE_DATE_DESC
+  DOCCOMPANY_ASC
+  DOCCOMPANY_DESC
+  DOCCOMPANY_CODE_ASC
+  DOCCOMPANY_CODE_DESC
+  COMPANY_STATUS_ASC
+  COMPANY_STATUS_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+type DocHistory {
+  lrno: String
+  sequence: String
+  effectiveDate: String
+  docCompany: String
+  docCompanyCode: String
+  companyStatus: String
+  createDate: Date
+}
+
+"""
+A condition to be used against `DocHistory` object types. All fields are tested
+for equality and combined with a logical ‘and.’
+"""
+input DocHistoryCondition {
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `sequence` field."""
+  sequence: String
+
+  """Checks for equality with the object’s `effectiveDate` field."""
+  effectiveDate: String
+
+  """Checks for equality with the object’s `docCompany` field."""
+  docCompany: String
+
+  """Checks for equality with the object’s `docCompanyCode` field."""
+  docCompanyCode: String
+
+  """Checks for equality with the object’s `companyStatus` field."""
+  companyStatus: String
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `DocHistory`"""
+input DocHistoryInput {
+  lrno: String
+  sequence: String
+  effectiveDate: String
+  docCompany: String
+  docCompanyCode: String
+  companyStatus: String
+  createDate: Date
+}
+
+"""A connection to a list of `FlagHistory` values."""
+type FlagHistoriesConnection {
+  """A list of `FlagHistory` objects."""
+  nodes: [FlagHistory]!
+
+  """
+  A list of edges which contains the `FlagHistory` and cursor to aid in pagination.
+  """
+  edges: [FlagHistoriesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """The count of *all* `FlagHistory` you could get from the connection."""
+  totalCount: Int
+}
+
+"""A `FlagHistory` edge in the connection."""
+type FlagHistoriesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `FlagHistory` at the end of the edge."""
+  node: FlagHistory
+}
+
+"""Methods to use when ordering `FlagHistory`."""
+enum FlagHistoriesOrderBy {
+  NATURAL
+  LRNO_ASC
+  LRNO_DESC
+  SEQUENCE_ASC
+  SEQUENCE_DESC
+  EFFECTIVE_DATE_ASC
+  EFFECTIVE_DATE_DESC
+  FLAG_ASC
+  FLAG_DESC
+  FLAG_CODE_ASC
+  FLAG_CODE_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+type FlagHistory {
+  lrno: String
+  sequence: String
+  effectiveDate: String
+  flag: String
+  flagCode: String
+  createDate: Date
+}
+
+"""
+A condition to be used against `FlagHistory` object types. All fields are tested
+for equality and combined with a logical ‘and.’
+"""
+input FlagHistoryCondition {
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `sequence` field."""
+  sequence: String
+
+  """Checks for equality with the object’s `effectiveDate` field."""
+  effectiveDate: String
+
+  """Checks for equality with the object’s `flag` field."""
+  flag: String
+
+  """Checks for equality with the object’s `flagCode` field."""
+  flagCode: String
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `FlagHistory`"""
+input FlagHistoryInput {
+  lrno: String
+  sequence: String
+  effectiveDate: String
+  flag: String
+  flagCode: String
+  createDate: Date
+}
+
+"""A connection to a list of `GroupBeneficialOwnerHistory` values."""
+type GroupBeneficialOwnerHistoriesConnection {
+  """A list of `GroupBeneficialOwnerHistory` objects."""
+  nodes: [GroupBeneficialOwnerHistory]!
+
+  """
+  A list of edges which contains the `GroupBeneficialOwnerHistory` and cursor to aid in pagination.
+  """
+  edges: [GroupBeneficialOwnerHistoriesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """
+  The count of *all* `GroupBeneficialOwnerHistory` you could get from the connection.
+  """
+  totalCount: Int
+}
+
+"""A `GroupBeneficialOwnerHistory` edge in the connection."""
+type GroupBeneficialOwnerHistoriesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `GroupBeneficialOwnerHistory` at the end of the edge."""
+  node: GroupBeneficialOwnerHistory
+}
+
+"""Methods to use when ordering `GroupBeneficialOwnerHistory`."""
+enum GroupBeneficialOwnerHistoriesOrderBy {
+  NATURAL
+  LRNO_ASC
+  LRNO_DESC
+  SEQUENCE_ASC
+  SEQUENCE_DESC
+  EFFECTIVE_DATE_ASC
+  EFFECTIVE_DATE_DESC
+  GROUP_BENEFICIAL_OWNER_ASC
+  GROUP_BENEFICIAL_OWNER_DESC
+  GROUP_BENEFICIAL_OWNER_CODE_ASC
+  GROUP_BENEFICIAL_OWNER_CODE_DESC
+  COMPANY_STATUS_ASC
+  COMPANY_STATUS_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+type GroupBeneficialOwnerHistory {
+  lrno: String
+  sequence: String
+  effectiveDate: String
+  groupBeneficialOwner: String
+  groupBeneficialOwnerCode: String
+  companyStatus: String
+  createDate: Date
+}
+
+"""
+A condition to be used against `GroupBeneficialOwnerHistory` object types. All
+fields are tested for equality and combined with a logical ‘and.’
+"""
+input GroupBeneficialOwnerHistoryCondition {
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `sequence` field."""
+  sequence: String
+
+  """Checks for equality with the object’s `effectiveDate` field."""
+  effectiveDate: String
+
+  """Checks for equality with the object’s `groupBeneficialOwner` field."""
+  groupBeneficialOwner: String
+
+  """
+  Checks for equality with the object’s `groupBeneficialOwnerCode` field.
+  """
+  groupBeneficialOwnerCode: String
+
+  """Checks for equality with the object’s `companyStatus` field."""
+  companyStatus: String
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `GroupBeneficialOwnerHistory`"""
+input GroupBeneficialOwnerHistoryInput {
+  lrno: String
+  sequence: String
+  effectiveDate: String
+  groupBeneficialOwner: String
+  groupBeneficialOwnerCode: String
+  companyStatus: String
+  createDate: Date
+}
+
+type MainEngine {
+  lrno: String
+  position: String
+  engineType: String
+  engineDesigner: String
+  engineBuilder: String
+  engineModel: String
+  numberOfCylinders: Int
+  bore: Int
+  stroke: Int
+  strokeType: String
+  powerBhp: Int
+  powerKw: Int
+  rpm: Int
+  engineBuilderCode: String
+  engineMakerCode: String
+  cylinderArrangementCode: String
+  cylinderArrangementDecode: String
+  bhpOfMainOilEngines: Int
+  createDate: Date
+}
+
+"""
+A condition to be used against `MainEngine` object types. All fields are tested
+for equality and combined with a logical ‘and.’
+"""
+input MainEngineCondition {
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `position` field."""
+  position: String
+
+  """Checks for equality with the object’s `engineType` field."""
+  engineType: String
+
+  """Checks for equality with the object’s `engineDesigner` field."""
+  engineDesigner: String
+
+  """Checks for equality with the object’s `engineBuilder` field."""
+  engineBuilder: String
+
+  """Checks for equality with the object’s `engineModel` field."""
+  engineModel: String
+
+  """Checks for equality with the object’s `numberOfCylinders` field."""
+  numberOfCylinders: Int
+
+  """Checks for equality with the object’s `bore` field."""
+  bore: Int
+
+  """Checks for equality with the object’s `stroke` field."""
+  stroke: Int
+
+  """Checks for equality with the object’s `strokeType` field."""
+  strokeType: String
+
+  """Checks for equality with the object’s `powerBhp` field."""
+  powerBhp: Int
+
+  """Checks for equality with the object’s `powerKw` field."""
+  powerKw: Int
+
+  """Checks for equality with the object’s `rpm` field."""
+  rpm: Int
+
+  """Checks for equality with the object’s `engineBuilderCode` field."""
+  engineBuilderCode: String
+
+  """Checks for equality with the object’s `engineMakerCode` field."""
+  engineMakerCode: String
+
+  """
+  Checks for equality with the object’s `cylinderArrangementCode` field.
+  """
+  cylinderArrangementCode: String
+
+  """
+  Checks for equality with the object’s `cylinderArrangementDecode` field.
+  """
+  cylinderArrangementDecode: String
+
+  """Checks for equality with the object’s `bhpOfMainOilEngines` field."""
+  bhpOfMainOilEngines: Int
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `MainEngine`"""
+input MainEngineInput {
+  lrno: String
+  position: String
+  engineType: String
+  engineDesigner: String
+  engineBuilder: String
+  engineModel: String
+  numberOfCylinders: Int
+  bore: Int
+  stroke: Int
+  strokeType: String
+  powerBhp: Int
+  powerKw: Int
+  rpm: Int
+  engineBuilderCode: String
+  engineMakerCode: String
+  cylinderArrangementCode: String
+  cylinderArrangementDecode: String
+  bhpOfMainOilEngines: Int
+  createDate: Date
+}
+
+"""A connection to a list of `MainEngine` values."""
+type MainEnginesConnection {
+  """A list of `MainEngine` objects."""
+  nodes: [MainEngine]!
+
+  """
+  A list of edges which contains the `MainEngine` and cursor to aid in pagination.
+  """
+  edges: [MainEnginesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """The count of *all* `MainEngine` you could get from the connection."""
+  totalCount: Int
+}
+
+"""A `MainEngine` edge in the connection."""
+type MainEnginesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `MainEngine` at the end of the edge."""
+  node: MainEngine
+}
+
+"""Methods to use when ordering `MainEngine`."""
+enum MainEnginesOrderBy {
+  NATURAL
+  LRNO_ASC
+  LRNO_DESC
+  POSITION_ASC
+  POSITION_DESC
+  ENGINE_TYPE_ASC
+  ENGINE_TYPE_DESC
+  ENGINE_DESIGNER_ASC
+  ENGINE_DESIGNER_DESC
+  ENGINE_BUILDER_ASC
+  ENGINE_BUILDER_DESC
+  ENGINE_MODEL_ASC
+  ENGINE_MODEL_DESC
+  NUMBER_OF_CYLINDERS_ASC
+  NUMBER_OF_CYLINDERS_DESC
+  BORE_ASC
+  BORE_DESC
+  STROKE_ASC
+  STROKE_DESC
+  STROKE_TYPE_ASC
+  STROKE_TYPE_DESC
+  POWER_BHP_ASC
+  POWER_BHP_DESC
+  POWER_KW_ASC
+  POWER_KW_DESC
+  RPM_ASC
+  RPM_DESC
+  ENGINE_BUILDER_CODE_ASC
+  ENGINE_BUILDER_CODE_DESC
+  ENGINE_MAKER_CODE_ASC
+  ENGINE_MAKER_CODE_DESC
+  CYLINDER_ARRANGEMENT_CODE_ASC
+  CYLINDER_ARRANGEMENT_CODE_DESC
+  CYLINDER_ARRANGEMENT_DECODE_ASC
+  CYLINDER_ARRANGEMENT_DECODE_DESC
+  BHPOF_MAIN_OIL_ENGINES_ASC
+  BHPOF_MAIN_OIL_ENGINES_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+type MainGenerator {
+  lrno: String
+  sequenceNumber: String
+  generatorPosition: String
+  number: Int
+  kw: Int
+  voltage: Int
+  acDcIndicator: String
+  frequency: Int
+  generatorMaker: String
+  createDate: Date
+}
+
+"""
+A condition to be used against `MainGenerator` object types. All fields are
+tested for equality and combined with a logical ‘and.’
+"""
+input MainGeneratorCondition {
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `sequenceNumber` field."""
+  sequenceNumber: String
+
+  """Checks for equality with the object’s `generatorPosition` field."""
+  generatorPosition: String
+
+  """Checks for equality with the object’s `number` field."""
+  number: Int
+
+  """Checks for equality with the object’s `kw` field."""
+  kw: Int
+
+  """Checks for equality with the object’s `voltage` field."""
+  voltage: Int
+
+  """Checks for equality with the object’s `acDcIndicator` field."""
+  acDcIndicator: String
+
+  """Checks for equality with the object’s `frequency` field."""
+  frequency: Int
+
+  """Checks for equality with the object’s `generatorMaker` field."""
+  generatorMaker: String
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `MainGenerator`"""
+input MainGeneratorInput {
+  lrno: String
+  sequenceNumber: String
+  generatorPosition: String
+  number: Int
+  kw: Int
+  voltage: Int
+  acDcIndicator: String
+  frequency: Int
+  generatorMaker: String
+  createDate: Date
+}
+
+"""A connection to a list of `MainGenerator` values."""
+type MainGeneratorsConnection {
+  """A list of `MainGenerator` objects."""
+  nodes: [MainGenerator]!
+
+  """
+  A list of edges which contains the `MainGenerator` and cursor to aid in pagination.
+  """
+  edges: [MainGeneratorsEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """The count of *all* `MainGenerator` you could get from the connection."""
+  totalCount: Int
+}
+
+"""A `MainGenerator` edge in the connection."""
+type MainGeneratorsEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `MainGenerator` at the end of the edge."""
+  node: MainGenerator
+}
+
+"""Methods to use when ordering `MainGenerator`."""
+enum MainGeneratorsOrderBy {
+  NATURAL
+  LRNO_ASC
+  LRNO_DESC
+  SEQUENCE_NUMBER_ASC
+  SEQUENCE_NUMBER_DESC
+  GENERATOR_POSITION_ASC
+  GENERATOR_POSITION_DESC
+  NUMBER_ASC
+  NUMBER_DESC
+  KW_ASC
+  KW_DESC
+  VOLTAGE_ASC
+  VOLTAGE_DESC
+  AC_DCINDICATOR_ASC
+  AC_DCINDICATOR_DESC
+  FREQUENCY_ASC
+  FREQUENCY_DESC
+  GENERATOR_MAKER_ASC
+  GENERATOR_MAKER_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+"""
+The root mutation type which contains root level fields which mutate data.
+"""
+type Mutation {
+  """Creates a single `AuxEngine`."""
+  createAuxEngine(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateAuxEngineInput!
+  ): CreateAuxEnginePayload
+
+  """Creates a single `AuxiliaryGenerator`."""
+  createAuxiliaryGenerator(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateAuxiliaryGeneratorInput!
+  ): CreateAuxiliaryGeneratorPayload
+
+  """Creates a single `BoilersExpanded`."""
+  createBoilersExpanded(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateBoilersExpandedInput!
+  ): CreateBoilersExpandedPayload
+
+  """Creates a single `BuilderHistory`."""
+  createBuilderHistory(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateBuilderHistoryInput!
+  ): CreateBuilderHistoryPayload
+
+  """Creates a single `Capacity`."""
+  createCapacity(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateCapacityInput!
+  ): CreateCapacityPayload
+
+  """Creates a single `ClassHistory`."""
+  createClassHistory(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateClassHistoryInput!
+  ): CreateClassHistoryPayload
+
+  """Creates a single `ClassWithdrawn`."""
+  createClassWithdrawn(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateClassWithdrawnInput!
+  ): CreateClassWithdrawnPayload
+
+  """Creates a single `CompanyFullDetailsAndParentCode`."""
+  createCompanyFullDetailsAndParentCode(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateCompanyFullDetailsAndParentCodeInput!
+  ): CreateCompanyFullDetailsAndParentCodePayload
+
+  """Creates a single `CompanyVesselRelationship`."""
+  createCompanyVesselRelationship(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateCompanyVesselRelationshipInput!
+  ): CreateCompanyVesselRelationshipPayload
+
+  """Creates a single `CrewList`."""
+  createCrewList(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateCrewListInput!
+  ): CreateCrewListPayload
+
+  """Creates a single `DocHistory`."""
+  createDocHistory(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateDocHistoryInput!
+  ): CreateDocHistoryPayload
+
+  """Creates a single `FlagHistory`."""
+  createFlagHistory(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateFlagHistoryInput!
+  ): CreateFlagHistoryPayload
+
+  """Creates a single `GroupBeneficialOwnerHistory`."""
+  createGroupBeneficialOwnerHistory(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateGroupBeneficialOwnerHistoryInput!
+  ): CreateGroupBeneficialOwnerHistoryPayload
+
+  """Creates a single `MainEngine`."""
+  createMainEngine(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateMainEngineInput!
+  ): CreateMainEnginePayload
+
+  """Creates a single `MainGenerator`."""
+  createMainGenerator(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateMainGeneratorInput!
+  ): CreateMainGeneratorPayload
+
+  """Creates a single `NameHistory`."""
+  createNameHistory(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateNameHistoryInput!
+  ): CreateNameHistoryPayload
+
+  """Creates a single `OperatorHistory`."""
+  createOperatorHistory(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateOperatorHistoryInput!
+  ): CreateOperatorHistoryPayload
+
+  """Creates a single `PAndIHistory`."""
+  createPAndIHistory(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreatePAndIHistoryInput!
+  ): CreatePAndIHistoryPayload
+
+  """Creates a single `RegisteredOwnerHistory`."""
+  createRegisteredOwnerHistory(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateRegisteredOwnerHistoryInput!
+  ): CreateRegisteredOwnerHistoryPayload
+
+  """Creates a single `ShipData`."""
+  createShipData(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateShipDataInput!
+  ): CreateShipDataPayload
+
+  """Creates a single `ShipManagerHistory`."""
+  createShipManagerHistory(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateShipManagerHistoryInput!
+  ): CreateShipManagerHistoryPayload
+
+  """Creates a single `SpecialFeature`."""
+  createSpecialFeature(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateSpecialFeatureInput!
+  ): CreateSpecialFeaturePayload
+
+  """Creates a single `StatusHistory`."""
+  createStatusHistory(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateStatusHistoryInput!
+  ): CreateStatusHistoryPayload
+
+  """Creates a single `SurveyDateHistory`."""
+  createSurveyDateHistory(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateSurveyDateHistoryInput!
+  ): CreateSurveyDateHistoryPayload
+
+  """Creates a single `SurveyDate`."""
+  createSurveyDate(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateSurveyDateInput!
+  ): CreateSurveyDatePayload
+
+  """Creates a single `TechnicalManagerHistory`."""
+  createTechnicalManagerHistory(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateTechnicalManagerHistoryInput!
+  ): CreateTechnicalManagerHistoryPayload
+
+  """Creates a single `UnverifiedOwnership`."""
+  createUnverifiedOwnership(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateUnverifiedOwnershipInput!
+  ): CreateUnverifiedOwnershipPayload
+
+  """Updates a single `ShipData` using its globally unique id and a patch."""
+  updateShipData(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: UpdateShipDataInput!
+  ): UpdateShipDataPayload
+
+  """Updates a single `ShipData` using a unique key and a patch."""
+  updateShipDataByHash(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: UpdateShipDataByHashInput!
+  ): UpdateShipDataPayload
+
+  """Deletes a single `ShipData` using its globally unique id."""
+  deleteShipData(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: DeleteShipDataInput!
+  ): DeleteShipDataPayload
+
+  """Deletes a single `ShipData` using a unique key."""
+  deleteShipDataByHash(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: DeleteShipDataByHashInput!
+  ): DeleteShipDataPayload
+}
+
+"""A connection to a list of `NameHistory` values."""
+type NameHistoriesConnection {
+  """A list of `NameHistory` objects."""
+  nodes: [NameHistory]!
+
+  """
+  A list of edges which contains the `NameHistory` and cursor to aid in pagination.
+  """
+  edges: [NameHistoriesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """The count of *all* `NameHistory` you could get from the connection."""
+  totalCount: Int
+}
+
+"""A `NameHistory` edge in the connection."""
+type NameHistoriesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `NameHistory` at the end of the edge."""
+  node: NameHistory
+}
+
+"""Methods to use when ordering `NameHistory`."""
+enum NameHistoriesOrderBy {
+  NATURAL
+  LRNO_ASC
+  LRNO_DESC
+  SEQUENCE_ASC
+  SEQUENCE_DESC
+  VESSEL_NAME_ASC
+  VESSEL_NAME_DESC
+  EFFECTIVE_DATE_ASC
+  EFFECTIVE_DATE_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+type NameHistory {
+  lrno: String
+  sequence: String
+  vesselName: String
+  effectiveDate: String
+  createDate: Date
+}
+
+"""
+A condition to be used against `NameHistory` object types. All fields are tested
+for equality and combined with a logical ‘and.’
+"""
+input NameHistoryCondition {
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `sequence` field."""
+  sequence: String
+
+  """Checks for equality with the object’s `vesselName` field."""
+  vesselName: String
+
+  """Checks for equality with the object’s `effectiveDate` field."""
+  effectiveDate: String
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `NameHistory`"""
+input NameHistoryInput {
+  lrno: String
+  sequence: String
+  vesselName: String
+  effectiveDate: String
+  createDate: Date
+}
+
+"""An object with a globally unique `ID`."""
+interface Node {
+  """
+  A globally unique identifier. Can be used in various places throughout the system to identify this single value.
+  """
+  nodeId: ID!
+}
+
+"""A connection to a list of `OperatorHistory` values."""
+type OperatorHistoriesConnection {
+  """A list of `OperatorHistory` objects."""
+  nodes: [OperatorHistory]!
+
+  """
+  A list of edges which contains the `OperatorHistory` and cursor to aid in pagination.
+  """
+  edges: [OperatorHistoriesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """
+  The count of *all* `OperatorHistory` you could get from the connection.
+  """
+  totalCount: Int
+}
+
+"""A `OperatorHistory` edge in the connection."""
+type OperatorHistoriesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `OperatorHistory` at the end of the edge."""
+  node: OperatorHistory
+}
+
+"""Methods to use when ordering `OperatorHistory`."""
+enum OperatorHistoriesOrderBy {
+  NATURAL
+  LRNO_ASC
+  LRNO_DESC
+  SEQUENCE_ASC
+  SEQUENCE_DESC
+  EFFECTIVE_DATE_ASC
+  EFFECTIVE_DATE_DESC
+  OPERATOR_ASC
+  OPERATOR_DESC
+  OPERATOR_CODE_ASC
+  OPERATOR_CODE_DESC
+  COMPANY_STATUS_ASC
+  COMPANY_STATUS_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+type OperatorHistory {
+  lrno: String
+  sequence: String
+  effectiveDate: String
+  operator: String
+  operatorCode: String
+  companyStatus: String
+  createDate: Date
+}
+
+"""
+A condition to be used against `OperatorHistory` object types. All fields are
+tested for equality and combined with a logical ‘and.’
+"""
+input OperatorHistoryCondition {
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `sequence` field."""
+  sequence: String
+
+  """Checks for equality with the object’s `effectiveDate` field."""
+  effectiveDate: String
+
+  """Checks for equality with the object’s `operator` field."""
+  operator: String
+
+  """Checks for equality with the object’s `operatorCode` field."""
+  operatorCode: String
+
+  """Checks for equality with the object’s `companyStatus` field."""
+  companyStatus: String
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `OperatorHistory`"""
+input OperatorHistoryInput {
+  lrno: String
+  sequence: String
+  effectiveDate: String
+  operator: String
+  operatorCode: String
+  companyStatus: String
+  createDate: Date
+}
+
+"""Information about pagination in a connection."""
+type PageInfo {
+  """When paginating forwards, are there more items?"""
+  hasNextPage: Boolean!
+
+  """When paginating backwards, are there more items?"""
+  hasPreviousPage: Boolean!
+
+  """When paginating backwards, the cursor to continue."""
+  startCursor: Cursor
+
+  """When paginating forwards, the cursor to continue."""
+  endCursor: Cursor
+}
+
+"""A connection to a list of `PAndIHistory` values."""
+type PAndIHistoriesConnection {
+  """A list of `PAndIHistory` objects."""
+  nodes: [PAndIHistory]!
+
+  """
+  A list of edges which contains the `PAndIHistory` and cursor to aid in pagination.
+  """
+  edges: [PAndIHistoriesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """The count of *all* `PAndIHistory` you could get from the connection."""
+  totalCount: Int
+}
+
+"""A `PAndIHistory` edge in the connection."""
+type PAndIHistoriesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `PAndIHistory` at the end of the edge."""
+  node: PAndIHistory
+}
+
+"""Methods to use when ordering `PAndIHistory`."""
+enum PAndIHistoriesOrderBy {
+  NATURAL
+  LRNO_ASC
+  LRNO_DESC
+  SEQUENCE_ASC
+  SEQUENCE_DESC
+  PAND_ICLUB_CODE_ASC
+  PAND_ICLUB_CODE_DESC
+  PAND_ICLUB_DECODE_ASC
+  PAND_ICLUB_DECODE_DESC
+  EFFECTIVE_DATE_ASC
+  EFFECTIVE_DATE_DESC
+  SOURCE_ASC
+  SOURCE_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+type PAndIHistory {
+  lrno: String
+  sequence: String
+  pandIClubCode: String
+  pandIClubDecode: String
+  effectiveDate: String
+  source: String
+  createDate: Date
+}
+
+"""
+A condition to be used against `PAndIHistory` object types. All fields are
+tested for equality and combined with a logical ‘and.’
+"""
+input PAndIHistoryCondition {
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `sequence` field."""
+  sequence: String
+
+  """Checks for equality with the object’s `pandIClubCode` field."""
+  pandIClubCode: String
+
+  """Checks for equality with the object’s `pandIClubDecode` field."""
+  pandIClubDecode: String
+
+  """Checks for equality with the object’s `effectiveDate` field."""
+  effectiveDate: String
+
+  """Checks for equality with the object’s `source` field."""
+  source: String
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `PAndIHistory`"""
+input PAndIHistoryInput {
+  lrno: String
+  sequence: String
+  pandIClubCode: String
+  pandIClubDecode: String
+  effectiveDate: String
+  source: String
+  createDate: Date
+}
+
+"""The root query type which gives access points into the data universe."""
+type Query implements Node {
+  """
+  Exposes the root query type nested one level down. This is helpful for Relay 1
+  which can only query top level fields if they are in a particular form.
+  """
+  query: Query!
+
+  """
+  The root query type must be a `Node` to work well with Relay 1 mutations. This just resolves to `query`.
+  """
+  nodeId: ID!
+
+  """Fetches an object given its globally unique `ID`."""
+  node(
+    """The globally unique `ID`."""
+    nodeId: ID!
+  ): Node
+
+  """Reads and enables pagination through a set of `AuxEngine`."""
+  allAuxEngines(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `AuxEngine`."""
+    orderBy: [AuxEnginesOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: AuxEngineCondition
+  ): AuxEnginesConnection
+
+  """Reads and enables pagination through a set of `AuxiliaryGenerator`."""
+  allAuxiliaryGenerators(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `AuxiliaryGenerator`."""
+    orderBy: [AuxiliaryGeneratorsOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: AuxiliaryGeneratorCondition
+  ): AuxiliaryGeneratorsConnection
+
+  """Reads and enables pagination through a set of `BoilersExpanded`."""
+  allBoilersExpandeds(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `BoilersExpanded`."""
+    orderBy: [BoilersExpandedsOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: BoilersExpandedCondition
+  ): BoilersExpandedsConnection
+
+  """Reads and enables pagination through a set of `BuilderHistory`."""
+  allBuilderHistories(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `BuilderHistory`."""
+    orderBy: [BuilderHistoriesOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: BuilderHistoryCondition
+  ): BuilderHistoriesConnection
+
+  """Reads and enables pagination through a set of `Capacity`."""
+  allCapacities(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `Capacity`."""
+    orderBy: [CapacitiesOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: CapacityCondition
+  ): CapacitiesConnection
+
+  """Reads and enables pagination through a set of `ClassHistory`."""
+  allClassHistories(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `ClassHistory`."""
+    orderBy: [ClassHistoriesOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: ClassHistoryCondition
+  ): ClassHistoriesConnection
+
+  """Reads and enables pagination through a set of `ClassWithdrawn`."""
+  allClassWithdrawns(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `ClassWithdrawn`."""
+    orderBy: [ClassWithdrawnsOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: ClassWithdrawnCondition
+  ): ClassWithdrawnsConnection
+
+  """
+  Reads and enables pagination through a set of `CompanyFullDetailsAndParentCode`.
+  """
+  allCompanyFullDetailsAndParentCodes(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `CompanyFullDetailsAndParentCode`."""
+    orderBy: [CompanyFullDetailsAndParentCodesOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: CompanyFullDetailsAndParentCodeCondition
+  ): CompanyFullDetailsAndParentCodesConnection
+
+  """
+  Reads and enables pagination through a set of `CompanyVesselRelationship`.
+  """
+  allCompanyVesselRelationships(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `CompanyVesselRelationship`."""
+    orderBy: [CompanyVesselRelationshipsOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: CompanyVesselRelationshipCondition
+  ): CompanyVesselRelationshipsConnection
+
+  """Reads and enables pagination through a set of `CrewList`."""
+  allCrewLists(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `CrewList`."""
+    orderBy: [CrewListsOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: CrewListCondition
+  ): CrewListsConnection
+
+  """Reads and enables pagination through a set of `DocHistory`."""
+  allDocHistories(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `DocHistory`."""
+    orderBy: [DocHistoriesOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: DocHistoryCondition
+  ): DocHistoriesConnection
+
+  """Reads and enables pagination through a set of `FlagHistory`."""
+  allFlagHistories(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `FlagHistory`."""
+    orderBy: [FlagHistoriesOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: FlagHistoryCondition
+  ): FlagHistoriesConnection
+
+  """
+  Reads and enables pagination through a set of `GroupBeneficialOwnerHistory`.
+  """
+  allGroupBeneficialOwnerHistories(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `GroupBeneficialOwnerHistory`."""
+    orderBy: [GroupBeneficialOwnerHistoriesOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: GroupBeneficialOwnerHistoryCondition
+  ): GroupBeneficialOwnerHistoriesConnection
+
+  """Reads and enables pagination through a set of `MainEngine`."""
+  allMainEngines(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `MainEngine`."""
+    orderBy: [MainEnginesOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: MainEngineCondition
+  ): MainEnginesConnection
+
+  """Reads and enables pagination through a set of `MainGenerator`."""
+  allMainGenerators(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `MainGenerator`."""
+    orderBy: [MainGeneratorsOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: MainGeneratorCondition
+  ): MainGeneratorsConnection
+
+  """Reads and enables pagination through a set of `NameHistory`."""
+  allNameHistories(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `NameHistory`."""
+    orderBy: [NameHistoriesOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: NameHistoryCondition
+  ): NameHistoriesConnection
+
+  """Reads and enables pagination through a set of `OperatorHistory`."""
+  allOperatorHistories(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `OperatorHistory`."""
+    orderBy: [OperatorHistoriesOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: OperatorHistoryCondition
+  ): OperatorHistoriesConnection
+
+  """Reads and enables pagination through a set of `PAndIHistory`."""
+  allPAndIHistories(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `PAndIHistory`."""
+    orderBy: [PAndIHistoriesOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: PAndIHistoryCondition
+  ): PAndIHistoriesConnection
+
+  """
+  Reads and enables pagination through a set of `RegisteredOwnerHistory`.
+  """
+  allRegisteredOwnerHistories(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `RegisteredOwnerHistory`."""
+    orderBy: [RegisteredOwnerHistoriesOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: RegisteredOwnerHistoryCondition
+  ): RegisteredOwnerHistoriesConnection
+
+  """Reads and enables pagination through a set of `ShipData`."""
+  allShipData(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `ShipData`."""
+    orderBy: [ShipDataOrderBy!] = [PRIMARY_KEY_ASC]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: ShipDataCondition
+  ): ShipDataConnection
+
+  """Reads and enables pagination through a set of `ShipManagerHistory`."""
+  allShipManagerHistories(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `ShipManagerHistory`."""
+    orderBy: [ShipManagerHistoriesOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: ShipManagerHistoryCondition
+  ): ShipManagerHistoriesConnection
+
+  """Reads and enables pagination through a set of `SpecialFeature`."""
+  allSpecialFeatures(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `SpecialFeature`."""
+    orderBy: [SpecialFeaturesOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: SpecialFeatureCondition
+  ): SpecialFeaturesConnection
+
+  """Reads and enables pagination through a set of `StatusHistory`."""
+  allStatusHistories(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `StatusHistory`."""
+    orderBy: [StatusHistoriesOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: StatusHistoryCondition
+  ): StatusHistoriesConnection
+
+  """Reads and enables pagination through a set of `SurveyDateHistory`."""
+  allSurveyDateHistories(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `SurveyDateHistory`."""
+    orderBy: [SurveyDateHistoriesOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: SurveyDateHistoryCondition
+  ): SurveyDateHistoriesConnection
+
+  """Reads and enables pagination through a set of `SurveyDate`."""
+  allSurveyDates(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `SurveyDate`."""
+    orderBy: [SurveyDatesOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: SurveyDateCondition
+  ): SurveyDatesConnection
+
+  """
+  Reads and enables pagination through a set of `TechnicalManagerHistory`.
+  """
+  allTechnicalManagerHistories(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `TechnicalManagerHistory`."""
+    orderBy: [TechnicalManagerHistoriesOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: TechnicalManagerHistoryCondition
+  ): TechnicalManagerHistoriesConnection
+
+  """Reads and enables pagination through a set of `UnverifiedOwnership`."""
+  allUnverifiedOwnerships(
+    """Only read the first `n` values of the set."""
+    first: Int
+
+    """Only read the last `n` values of the set."""
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """Read all values in the set before (above) this cursor."""
+    before: Cursor
+
+    """Read all values in the set after (below) this cursor."""
+    after: Cursor
+
+    """The method to use when ordering `UnverifiedOwnership`."""
+    orderBy: [UnverifiedOwnershipsOrderBy!] = [NATURAL]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: UnverifiedOwnershipCondition
+  ): UnverifiedOwnershipsConnection
+  shipDataByHash(hash: String!): ShipData
+
+  """Reads a single `ShipData` using its globally unique `ID`."""
+  shipData(
+    """The globally unique `ID` to be used in selecting a single `ShipData`."""
+    nodeId: ID!
+  ): ShipData
+}
+
+"""A connection to a list of `RegisteredOwnerHistory` values."""
+type RegisteredOwnerHistoriesConnection {
+  """A list of `RegisteredOwnerHistory` objects."""
+  nodes: [RegisteredOwnerHistory]!
+
+  """
+  A list of edges which contains the `RegisteredOwnerHistory` and cursor to aid in pagination.
+  """
+  edges: [RegisteredOwnerHistoriesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """
+  The count of *all* `RegisteredOwnerHistory` you could get from the connection.
+  """
+  totalCount: Int
+}
+
+"""A `RegisteredOwnerHistory` edge in the connection."""
+type RegisteredOwnerHistoriesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `RegisteredOwnerHistory` at the end of the edge."""
+  node: RegisteredOwnerHistory
+}
+
+"""Methods to use when ordering `RegisteredOwnerHistory`."""
+enum RegisteredOwnerHistoriesOrderBy {
+  NATURAL
+  LRNO_ASC
+  LRNO_DESC
+  SEQUENCE_ASC
+  SEQUENCE_DESC
+  EFFECTIVE_DATE_ASC
+  EFFECTIVE_DATE_DESC
+  OWNER_ASC
+  OWNER_DESC
+  OWNER_CODE_ASC
+  OWNER_CODE_DESC
+  COMPANY_STATUS_ASC
+  COMPANY_STATUS_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+type RegisteredOwnerHistory {
+  lrno: String
+  sequence: String
+  effectiveDate: String
+  owner: String
+  ownerCode: String
+  companyStatus: String
+  createDate: Date
+}
+
+"""
+A condition to be used against `RegisteredOwnerHistory` object types. All fields
+are tested for equality and combined with a logical ‘and.’
+"""
+input RegisteredOwnerHistoryCondition {
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `sequence` field."""
+  sequence: String
+
+  """Checks for equality with the object’s `effectiveDate` field."""
+  effectiveDate: String
+
+  """Checks for equality with the object’s `owner` field."""
+  owner: String
+
+  """Checks for equality with the object’s `ownerCode` field."""
+  ownerCode: String
+
+  """Checks for equality with the object’s `companyStatus` field."""
+  companyStatus: String
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `RegisteredOwnerHistory`"""
+input RegisteredOwnerHistoryInput {
+  lrno: String
+  sequence: String
+  effectiveDate: String
+  owner: String
+  ownerCode: String
+  companyStatus: String
+  createDate: Date
+}
+
+type ShipData implements Node {
+  """
+  A globally unique identifier. Can be used in various places throughout the system to identify this single value.
+  """
+  nodeId: ID!
+  hash: String!
+  lrimoShipNo: String
+  shipName: String
+  shipStatus: String
+  shipStatusEffectiveDate: String
+  shiptypeLevel5: String
+  shiptypeGroup: String
+  yearOfBuild: String
+  grossTonnage: Int
+  netTonnage: Int
+  deadweight: Int
+  flagName: String
+  callSign: String
+  maritimeMobileServiceIdentityMmsiNumber: String
+  portofRegistry: String
+  officialNumber: String
+  pandIClub: String
+  operator: String
+  operatorCompanyCode: String
+  operatorCountryOfControl: String
+  operatorCountryofDomicileName: String
+  operatorCountryofDomicileCode: String
+  operatorCountryOfRegistration: String
+  groupBeneficialOwner: String
+  groupBeneficialOwnerCompanyCode: String
+  groupBeneficialOwnerCountryOfControl: String
+  groupBeneficialOwnerCountryofDomicile: String
+  groupBeneficialOwnerCountryofDomicileCode: String
+  groupBeneficialOwnerCountryOfRegistration: String
+  shipManager: String
+  shipManagerCompanyCode: String
+  shipManagerCountryOfControl: String
+  shipManagerCountryofDomicileName: String
+  shipManagerCountryofDomicileCode: String
+  shipManagerCountryOfRegistration: String
+  docCompany: String
+  documentofComplianceDocCompanyCode: String
+  docCountryOfControl: String
+  docCompanyCountryofDomicile: String
+  docCompanyCountryofDomicilecode: String
+  docCountryOfRegistration: String
+  registeredOwner: String
+  registeredOwnerCode: String
+  registeredOwnerCountryOfControl: String
+  registeredOwnerCountryofDomicile: String
+  registeredOwnerCountryofDomicileCode: String
+  registeredOwnerCountryOfRegistration: String
+  technicalManager: String
+  technicalManagerCode: String
+  technicalManagerCountryOfControl: String
+  technicalManagerCountryOfDomicile: String
+  technicalManagerCountryOfDomicileCode: String
+  technicalManagerCountryOfRegistration: String
+  bareboatCharterCompany: String
+  bareboatCharterCompanyCode: String
+  bareboatCharterCountryofControl: String
+  bareboatCharterCountryofControlCode: String
+  bareboatCharterCountryofDomicileCode: String
+  bareboatCharterCountryofDomicile: String
+  bareboatCharterCountryofRegistration: String
+  bareboatCharterCountryofRegistrationCode: String
+  shipbuilder: String
+  shipbuilderFullStyle: String
+  countryOfBuild: String
+  yardNumber: String
+  newconstructionEntryDate: String
+  contractDate: String
+  keelLaidDate: String
+  launchDate: String
+  deliveryDate: String
+  estimatedCompletionDate: String
+  draught: BigFloat
+  depth: BigFloat
+  lengthOverallLoa: BigFloat
+  lengthBetweenPerpendicularsLbp: BigFloat
+  breadthExtreme: BigFloat
+  breadthMoulded: BigFloat
+  craneSwl: BigFloat
+  numberofDecks: Int
+  numberofTanks: Int
+  numberofHatches: Int
+  numberofHolds: Int
+  numberofCrew: Int
+  numberofCars: Int
+  passengersBerthed: Int
+  teu: Int
+  imoChemicalClassI: String
+  imoChemicalClassIi: String
+  imoChemicalClassIii: String
+  classNarrative: String
+  safetyManagementCertificateAuditor: String
+  safetyManagementCertificateConventionorVol: String
+  safetyManagementCertificateDateExpires: String
+  safetyManagementCertificateDateIssued: String
+  safetyManagementCertificateDocCompany: String
+  safetyManagementCertificateFlag: String
+  safetyManagementCertificateIssuer: String
+  safetyManagementCertificateOtherDescription: String
+  safetyManagementCertificateShipName: String
+  safetyManagementCertificateShipType: String
+  safetyManagementCertificateSource: String
+  flagDisputed: Int
+  flagSanctionedCountry: Int
+  historicalFlagSanctionedCountry: Int
+  historicalOwnerinOfacSanctionedCountry: Int
+  overallComplianceStatus: Int
+  ownerinFatfJurisdiction: Int
+  ownerinOfacSanctionedCountry: Int
+  owneronBesSanctionList: Int
+  owneronEuSanctionList: Int
+  owneronOfacSanctionList: Int
+  owneronUnSanctionList: Int
+  parentinFatfJurisdiction: Int
+  parentinOfacSanctionedCountry: Int
+  sanctionedCountryPortCallLast12M: Int
+  sanctionedCountryPortCallLast3M: Int
+  sanctionedCountryPortCallLast6M: Int
+  shiponEuSanctionList: Int
+  shiponOfacNonSdnSanctionList: Int
+  shiponOfacSanctionList: Int
+  shiponUnSanctionList: Int
+  createDate: Date
+}
+
+"""
+A condition to be used against `ShipData` object types. All fields are tested
+for equality and combined with a logical ‘and.’
+"""
+input ShipDataCondition {
+  """Checks for equality with the object’s `hash` field."""
+  hash: String
+
+  """Checks for equality with the object’s `lrimoShipNo` field."""
+  lrimoShipNo: String
+
+  """Checks for equality with the object’s `shipName` field."""
+  shipName: String
+
+  """Checks for equality with the object’s `shipStatus` field."""
+  shipStatus: String
+
+  """
+  Checks for equality with the object’s `shipStatusEffectiveDate` field.
+  """
+  shipStatusEffectiveDate: String
+
+  """Checks for equality with the object’s `shiptypeLevel5` field."""
+  shiptypeLevel5: String
+
+  """Checks for equality with the object’s `shiptypeGroup` field."""
+  shiptypeGroup: String
+
+  """Checks for equality with the object’s `yearOfBuild` field."""
+  yearOfBuild: String
+
+  """Checks for equality with the object’s `grossTonnage` field."""
+  grossTonnage: Int
+
+  """Checks for equality with the object’s `netTonnage` field."""
+  netTonnage: Int
+
+  """Checks for equality with the object’s `deadweight` field."""
+  deadweight: Int
+
+  """Checks for equality with the object’s `flagName` field."""
+  flagName: String
+
+  """Checks for equality with the object’s `callSign` field."""
+  callSign: String
+
+  """
+  Checks for equality with the object’s `maritimeMobileServiceIdentityMmsiNumber` field.
+  """
+  maritimeMobileServiceIdentityMmsiNumber: String
+
+  """Checks for equality with the object’s `portofRegistry` field."""
+  portofRegistry: String
+
+  """Checks for equality with the object’s `officialNumber` field."""
+  officialNumber: String
+
+  """Checks for equality with the object’s `pandIClub` field."""
+  pandIClub: String
+
+  """Checks for equality with the object’s `operator` field."""
+  operator: String
+
+  """Checks for equality with the object’s `operatorCompanyCode` field."""
+  operatorCompanyCode: String
+
+  """
+  Checks for equality with the object’s `operatorCountryOfControl` field.
+  """
+  operatorCountryOfControl: String
+
+  """
+  Checks for equality with the object’s `operatorCountryofDomicileName` field.
+  """
+  operatorCountryofDomicileName: String
+
+  """
+  Checks for equality with the object’s `operatorCountryofDomicileCode` field.
+  """
+  operatorCountryofDomicileCode: String
+
+  """
+  Checks for equality with the object’s `operatorCountryOfRegistration` field.
+  """
+  operatorCountryOfRegistration: String
+
+  """Checks for equality with the object’s `groupBeneficialOwner` field."""
+  groupBeneficialOwner: String
+
+  """
+  Checks for equality with the object’s `groupBeneficialOwnerCompanyCode` field.
+  """
+  groupBeneficialOwnerCompanyCode: String
+
+  """
+  Checks for equality with the object’s `groupBeneficialOwnerCountryOfControl` field.
+  """
+  groupBeneficialOwnerCountryOfControl: String
+
+  """
+  Checks for equality with the object’s `groupBeneficialOwnerCountryofDomicile` field.
+  """
+  groupBeneficialOwnerCountryofDomicile: String
+
+  """
+  Checks for equality with the object’s `groupBeneficialOwnerCountryofDomicileCode` field.
+  """
+  groupBeneficialOwnerCountryofDomicileCode: String
+
+  """
+  Checks for equality with the object’s `groupBeneficialOwnerCountryOfRegistration` field.
+  """
+  groupBeneficialOwnerCountryOfRegistration: String
+
+  """Checks for equality with the object’s `shipManager` field."""
+  shipManager: String
+
+  """Checks for equality with the object’s `shipManagerCompanyCode` field."""
+  shipManagerCompanyCode: String
+
+  """
+  Checks for equality with the object’s `shipManagerCountryOfControl` field.
+  """
+  shipManagerCountryOfControl: String
+
+  """
+  Checks for equality with the object’s `shipManagerCountryofDomicileName` field.
+  """
+  shipManagerCountryofDomicileName: String
+
+  """
+  Checks for equality with the object’s `shipManagerCountryofDomicileCode` field.
+  """
+  shipManagerCountryofDomicileCode: String
+
+  """
+  Checks for equality with the object’s `shipManagerCountryOfRegistration` field.
+  """
+  shipManagerCountryOfRegistration: String
+
+  """Checks for equality with the object’s `docCompany` field."""
+  docCompany: String
+
+  """
+  Checks for equality with the object’s `documentofComplianceDocCompanyCode` field.
+  """
+  documentofComplianceDocCompanyCode: String
+
+  """Checks for equality with the object’s `docCountryOfControl` field."""
+  docCountryOfControl: String
+
+  """
+  Checks for equality with the object’s `docCompanyCountryofDomicile` field.
+  """
+  docCompanyCountryofDomicile: String
+
+  """
+  Checks for equality with the object’s `docCompanyCountryofDomicilecode` field.
+  """
+  docCompanyCountryofDomicilecode: String
+
+  """
+  Checks for equality with the object’s `docCountryOfRegistration` field.
+  """
+  docCountryOfRegistration: String
+
+  """Checks for equality with the object’s `registeredOwner` field."""
+  registeredOwner: String
+
+  """Checks for equality with the object’s `registeredOwnerCode` field."""
+  registeredOwnerCode: String
+
+  """
+  Checks for equality with the object’s `registeredOwnerCountryOfControl` field.
+  """
+  registeredOwnerCountryOfControl: String
+
+  """
+  Checks for equality with the object’s `registeredOwnerCountryofDomicile` field.
+  """
+  registeredOwnerCountryofDomicile: String
+
+  """
+  Checks for equality with the object’s `registeredOwnerCountryofDomicileCode` field.
+  """
+  registeredOwnerCountryofDomicileCode: String
+
+  """
+  Checks for equality with the object’s `registeredOwnerCountryOfRegistration` field.
+  """
+  registeredOwnerCountryOfRegistration: String
+
+  """Checks for equality with the object’s `technicalManager` field."""
+  technicalManager: String
+
+  """Checks for equality with the object’s `technicalManagerCode` field."""
+  technicalManagerCode: String
+
+  """
+  Checks for equality with the object’s `technicalManagerCountryOfControl` field.
+  """
+  technicalManagerCountryOfControl: String
+
+  """
+  Checks for equality with the object’s `technicalManagerCountryOfDomicile` field.
+  """
+  technicalManagerCountryOfDomicile: String
+
+  """
+  Checks for equality with the object’s `technicalManagerCountryOfDomicileCode` field.
+  """
+  technicalManagerCountryOfDomicileCode: String
+
+  """
+  Checks for equality with the object’s `technicalManagerCountryOfRegistration` field.
+  """
+  technicalManagerCountryOfRegistration: String
+
+  """Checks for equality with the object’s `bareboatCharterCompany` field."""
+  bareboatCharterCompany: String
+
+  """
+  Checks for equality with the object’s `bareboatCharterCompanyCode` field.
+  """
+  bareboatCharterCompanyCode: String
+
+  """
+  Checks for equality with the object’s `bareboatCharterCountryofControl` field.
+  """
+  bareboatCharterCountryofControl: String
+
+  """
+  Checks for equality with the object’s `bareboatCharterCountryofControlCode` field.
+  """
+  bareboatCharterCountryofControlCode: String
+
+  """
+  Checks for equality with the object’s `bareboatCharterCountryofDomicileCode` field.
+  """
+  bareboatCharterCountryofDomicileCode: String
+
+  """
+  Checks for equality with the object’s `bareboatCharterCountryofDomicile` field.
+  """
+  bareboatCharterCountryofDomicile: String
+
+  """
+  Checks for equality with the object’s `bareboatCharterCountryofRegistration` field.
+  """
+  bareboatCharterCountryofRegistration: String
+
+  """
+  Checks for equality with the object’s `bareboatCharterCountryofRegistrationCode` field.
+  """
+  bareboatCharterCountryofRegistrationCode: String
+
+  """Checks for equality with the object’s `shipbuilder` field."""
+  shipbuilder: String
+
+  """Checks for equality with the object’s `shipbuilderFullStyle` field."""
+  shipbuilderFullStyle: String
+
+  """Checks for equality with the object’s `countryOfBuild` field."""
+  countryOfBuild: String
+
+  """Checks for equality with the object’s `yardNumber` field."""
+  yardNumber: String
+
+  """
+  Checks for equality with the object’s `newconstructionEntryDate` field.
+  """
+  newconstructionEntryDate: String
+
+  """Checks for equality with the object’s `contractDate` field."""
+  contractDate: String
+
+  """Checks for equality with the object’s `keelLaidDate` field."""
+  keelLaidDate: String
+
+  """Checks for equality with the object’s `launchDate` field."""
+  launchDate: String
+
+  """Checks for equality with the object’s `deliveryDate` field."""
+  deliveryDate: String
+
+  """
+  Checks for equality with the object’s `estimatedCompletionDate` field.
+  """
+  estimatedCompletionDate: String
+
+  """Checks for equality with the object’s `draught` field."""
+  draught: BigFloat
+
+  """Checks for equality with the object’s `depth` field."""
+  depth: BigFloat
+
+  """Checks for equality with the object’s `lengthOverallLoa` field."""
+  lengthOverallLoa: BigFloat
+
+  """
+  Checks for equality with the object’s `lengthBetweenPerpendicularsLbp` field.
+  """
+  lengthBetweenPerpendicularsLbp: BigFloat
+
+  """Checks for equality with the object’s `breadthExtreme` field."""
+  breadthExtreme: BigFloat
+
+  """Checks for equality with the object’s `breadthMoulded` field."""
+  breadthMoulded: BigFloat
+
+  """Checks for equality with the object’s `craneSwl` field."""
+  craneSwl: BigFloat
+
+  """Checks for equality with the object’s `numberofDecks` field."""
+  numberofDecks: Int
+
+  """Checks for equality with the object’s `numberofTanks` field."""
+  numberofTanks: Int
+
+  """Checks for equality with the object’s `numberofHatches` field."""
+  numberofHatches: Int
+
+  """Checks for equality with the object’s `numberofHolds` field."""
+  numberofHolds: Int
+
+  """Checks for equality with the object’s `numberofCrew` field."""
+  numberofCrew: Int
+
+  """Checks for equality with the object’s `numberofCars` field."""
+  numberofCars: Int
+
+  """Checks for equality with the object’s `passengersBerthed` field."""
+  passengersBerthed: Int
+
+  """Checks for equality with the object’s `teu` field."""
+  teu: Int
+
+  """Checks for equality with the object’s `imoChemicalClassI` field."""
+  imoChemicalClassI: String
+
+  """Checks for equality with the object’s `imoChemicalClassIi` field."""
+  imoChemicalClassIi: String
+
+  """Checks for equality with the object’s `imoChemicalClassIii` field."""
+  imoChemicalClassIii: String
+
+  """Checks for equality with the object’s `classNarrative` field."""
+  classNarrative: String
+
+  """
+  Checks for equality with the object’s `safetyManagementCertificateAuditor` field.
+  """
+  safetyManagementCertificateAuditor: String
+
+  """
+  Checks for equality with the object’s `safetyManagementCertificateConventionorVol` field.
+  """
+  safetyManagementCertificateConventionorVol: String
+
+  """
+  Checks for equality with the object’s `safetyManagementCertificateDateExpires` field.
+  """
+  safetyManagementCertificateDateExpires: String
+
+  """
+  Checks for equality with the object’s `safetyManagementCertificateDateIssued` field.
+  """
+  safetyManagementCertificateDateIssued: String
+
+  """
+  Checks for equality with the object’s `safetyManagementCertificateDocCompany` field.
+  """
+  safetyManagementCertificateDocCompany: String
+
+  """
+  Checks for equality with the object’s `safetyManagementCertificateFlag` field.
+  """
+  safetyManagementCertificateFlag: String
+
+  """
+  Checks for equality with the object’s `safetyManagementCertificateIssuer` field.
+  """
+  safetyManagementCertificateIssuer: String
+
+  """
+  Checks for equality with the object’s `safetyManagementCertificateOtherDescription` field.
+  """
+  safetyManagementCertificateOtherDescription: String
+
+  """
+  Checks for equality with the object’s `safetyManagementCertificateShipName` field.
+  """
+  safetyManagementCertificateShipName: String
+
+  """
+  Checks for equality with the object’s `safetyManagementCertificateShipType` field.
+  """
+  safetyManagementCertificateShipType: String
+
+  """
+  Checks for equality with the object’s `safetyManagementCertificateSource` field.
+  """
+  safetyManagementCertificateSource: String
+
+  """Checks for equality with the object’s `flagDisputed` field."""
+  flagDisputed: Int
+
+  """Checks for equality with the object’s `flagSanctionedCountry` field."""
+  flagSanctionedCountry: Int
+
+  """
+  Checks for equality with the object’s `historicalFlagSanctionedCountry` field.
+  """
+  historicalFlagSanctionedCountry: Int
+
+  """
+  Checks for equality with the object’s `historicalOwnerinOfacSanctionedCountry` field.
+  """
+  historicalOwnerinOfacSanctionedCountry: Int
+
+  """
+  Checks for equality with the object’s `overallComplianceStatus` field.
+  """
+  overallComplianceStatus: Int
+
+  """
+  Checks for equality with the object’s `ownerinFatfJurisdiction` field.
+  """
+  ownerinFatfJurisdiction: Int
+
+  """
+  Checks for equality with the object’s `ownerinOfacSanctionedCountry` field.
+  """
+  ownerinOfacSanctionedCountry: Int
+
+  """Checks for equality with the object’s `owneronBesSanctionList` field."""
+  owneronBesSanctionList: Int
+
+  """Checks for equality with the object’s `owneronEuSanctionList` field."""
+  owneronEuSanctionList: Int
+
+  """
+  Checks for equality with the object’s `owneronOfacSanctionList` field.
+  """
+  owneronOfacSanctionList: Int
+
+  """Checks for equality with the object’s `owneronUnSanctionList` field."""
+  owneronUnSanctionList: Int
+
+  """
+  Checks for equality with the object’s `parentinFatfJurisdiction` field.
+  """
+  parentinFatfJurisdiction: Int
+
+  """
+  Checks for equality with the object’s `parentinOfacSanctionedCountry` field.
+  """
+  parentinOfacSanctionedCountry: Int
+
+  """
+  Checks for equality with the object’s `sanctionedCountryPortCallLast12M` field.
+  """
+  sanctionedCountryPortCallLast12M: Int
+
+  """
+  Checks for equality with the object’s `sanctionedCountryPortCallLast3M` field.
+  """
+  sanctionedCountryPortCallLast3M: Int
+
+  """
+  Checks for equality with the object’s `sanctionedCountryPortCallLast6M` field.
+  """
+  sanctionedCountryPortCallLast6M: Int
+
+  """Checks for equality with the object’s `shiponEuSanctionList` field."""
+  shiponEuSanctionList: Int
+
+  """
+  Checks for equality with the object’s `shiponOfacNonSdnSanctionList` field.
+  """
+  shiponOfacNonSdnSanctionList: Int
+
+  """Checks for equality with the object’s `shiponOfacSanctionList` field."""
+  shiponOfacSanctionList: Int
+
+  """Checks for equality with the object’s `shiponUnSanctionList` field."""
+  shiponUnSanctionList: Int
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""A connection to a list of `ShipData` values."""
+type ShipDataConnection {
+  """A list of `ShipData` objects."""
+  nodes: [ShipData]!
+
+  """
+  A list of edges which contains the `ShipData` and cursor to aid in pagination.
+  """
+  edges: [ShipDataEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """The count of *all* `ShipData` you could get from the connection."""
+  totalCount: Int
+}
+
+"""A `ShipData` edge in the connection."""
+type ShipDataEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `ShipData` at the end of the edge."""
+  node: ShipData
+}
+
+"""An input for mutations affecting `ShipData`"""
+input ShipDataInput {
+  hash: String!
+  lrimoShipNo: String
+  shipName: String
+  shipStatus: String
+  shipStatusEffectiveDate: String
+  shiptypeLevel5: String
+  shiptypeGroup: String
+  yearOfBuild: String
+  grossTonnage: Int
+  netTonnage: Int
+  deadweight: Int
+  flagName: String
+  callSign: String
+  maritimeMobileServiceIdentityMmsiNumber: String
+  portofRegistry: String
+  officialNumber: String
+  pandIClub: String
+  operator: String
+  operatorCompanyCode: String
+  operatorCountryOfControl: String
+  operatorCountryofDomicileName: String
+  operatorCountryofDomicileCode: String
+  operatorCountryOfRegistration: String
+  groupBeneficialOwner: String
+  groupBeneficialOwnerCompanyCode: String
+  groupBeneficialOwnerCountryOfControl: String
+  groupBeneficialOwnerCountryofDomicile: String
+  groupBeneficialOwnerCountryofDomicileCode: String
+  groupBeneficialOwnerCountryOfRegistration: String
+  shipManager: String
+  shipManagerCompanyCode: String
+  shipManagerCountryOfControl: String
+  shipManagerCountryofDomicileName: String
+  shipManagerCountryofDomicileCode: String
+  shipManagerCountryOfRegistration: String
+  docCompany: String
+  documentofComplianceDocCompanyCode: String
+  docCountryOfControl: String
+  docCompanyCountryofDomicile: String
+  docCompanyCountryofDomicilecode: String
+  docCountryOfRegistration: String
+  registeredOwner: String
+  registeredOwnerCode: String
+  registeredOwnerCountryOfControl: String
+  registeredOwnerCountryofDomicile: String
+  registeredOwnerCountryofDomicileCode: String
+  registeredOwnerCountryOfRegistration: String
+  technicalManager: String
+  technicalManagerCode: String
+  technicalManagerCountryOfControl: String
+  technicalManagerCountryOfDomicile: String
+  technicalManagerCountryOfDomicileCode: String
+  technicalManagerCountryOfRegistration: String
+  bareboatCharterCompany: String
+  bareboatCharterCompanyCode: String
+  bareboatCharterCountryofControl: String
+  bareboatCharterCountryofControlCode: String
+  bareboatCharterCountryofDomicileCode: String
+  bareboatCharterCountryofDomicile: String
+  bareboatCharterCountryofRegistration: String
+  bareboatCharterCountryofRegistrationCode: String
+  shipbuilder: String
+  shipbuilderFullStyle: String
+  countryOfBuild: String
+  yardNumber: String
+  newconstructionEntryDate: String
+  contractDate: String
+  keelLaidDate: String
+  launchDate: String
+  deliveryDate: String
+  estimatedCompletionDate: String
+  draught: BigFloat
+  depth: BigFloat
+  lengthOverallLoa: BigFloat
+  lengthBetweenPerpendicularsLbp: BigFloat
+  breadthExtreme: BigFloat
+  breadthMoulded: BigFloat
+  craneSwl: BigFloat
+  numberofDecks: Int
+  numberofTanks: Int
+  numberofHatches: Int
+  numberofHolds: Int
+  numberofCrew: Int
+  numberofCars: Int
+  passengersBerthed: Int
+  teu: Int
+  imoChemicalClassI: String
+  imoChemicalClassIi: String
+  imoChemicalClassIii: String
+  classNarrative: String
+  safetyManagementCertificateAuditor: String
+  safetyManagementCertificateConventionorVol: String
+  safetyManagementCertificateDateExpires: String
+  safetyManagementCertificateDateIssued: String
+  safetyManagementCertificateDocCompany: String
+  safetyManagementCertificateFlag: String
+  safetyManagementCertificateIssuer: String
+  safetyManagementCertificateOtherDescription: String
+  safetyManagementCertificateShipName: String
+  safetyManagementCertificateShipType: String
+  safetyManagementCertificateSource: String
+  flagDisputed: Int
+  flagSanctionedCountry: Int
+  historicalFlagSanctionedCountry: Int
+  historicalOwnerinOfacSanctionedCountry: Int
+  overallComplianceStatus: Int
+  ownerinFatfJurisdiction: Int
+  ownerinOfacSanctionedCountry: Int
+  owneronBesSanctionList: Int
+  owneronEuSanctionList: Int
+  owneronOfacSanctionList: Int
+  owneronUnSanctionList: Int
+  parentinFatfJurisdiction: Int
+  parentinOfacSanctionedCountry: Int
+  sanctionedCountryPortCallLast12M: Int
+  sanctionedCountryPortCallLast3M: Int
+  sanctionedCountryPortCallLast6M: Int
+  shiponEuSanctionList: Int
+  shiponOfacNonSdnSanctionList: Int
+  shiponOfacSanctionList: Int
+  shiponUnSanctionList: Int
+  createDate: Date
+}
+
+"""Methods to use when ordering `ShipData`."""
+enum ShipDataOrderBy {
+  NATURAL
+  HASH_ASC
+  HASH_DESC
+  LRIMOSHIP_NO_ASC
+  LRIMOSHIP_NO_DESC
+  SHIP_NAME_ASC
+  SHIP_NAME_DESC
+  SHIP_STATUS_ASC
+  SHIP_STATUS_DESC
+  SHIP_STATUS_EFFECTIVE_DATE_ASC
+  SHIP_STATUS_EFFECTIVE_DATE_DESC
+  SHIPTYPE_LEVEL5_ASC
+  SHIPTYPE_LEVEL5_DESC
+  SHIPTYPE_GROUP_ASC
+  SHIPTYPE_GROUP_DESC
+  YEAR_OF_BUILD_ASC
+  YEAR_OF_BUILD_DESC
+  GROSS_TONNAGE_ASC
+  GROSS_TONNAGE_DESC
+  NET_TONNAGE_ASC
+  NET_TONNAGE_DESC
+  DEADWEIGHT_ASC
+  DEADWEIGHT_DESC
+  FLAG_NAME_ASC
+  FLAG_NAME_DESC
+  CALL_SIGN_ASC
+  CALL_SIGN_DESC
+  MARITIME_MOBILE_SERVICE_IDENTITY_MMSINUMBER_ASC
+  MARITIME_MOBILE_SERVICE_IDENTITY_MMSINUMBER_DESC
+  PORTOF_REGISTRY_ASC
+  PORTOF_REGISTRY_DESC
+  OFFICIAL_NUMBER_ASC
+  OFFICIAL_NUMBER_DESC
+  PAND_ICLUB_ASC
+  PAND_ICLUB_DESC
+  OPERATOR_ASC
+  OPERATOR_DESC
+  OPERATOR_COMPANY_CODE_ASC
+  OPERATOR_COMPANY_CODE_DESC
+  OPERATOR_COUNTRY_OF_CONTROL_ASC
+  OPERATOR_COUNTRY_OF_CONTROL_DESC
+  OPERATOR_COUNTRYOF_DOMICILE_NAME_ASC
+  OPERATOR_COUNTRYOF_DOMICILE_NAME_DESC
+  OPERATOR_COUNTRYOF_DOMICILE_CODE_ASC
+  OPERATOR_COUNTRYOF_DOMICILE_CODE_DESC
+  OPERATOR_COUNTRY_OF_REGISTRATION_ASC
+  OPERATOR_COUNTRY_OF_REGISTRATION_DESC
+  GROUP_BENEFICIAL_OWNER_ASC
+  GROUP_BENEFICIAL_OWNER_DESC
+  GROUP_BENEFICIAL_OWNER_COMPANY_CODE_ASC
+  GROUP_BENEFICIAL_OWNER_COMPANY_CODE_DESC
+  GROUP_BENEFICIAL_OWNER_COUNTRY_OF_CONTROL_ASC
+  GROUP_BENEFICIAL_OWNER_COUNTRY_OF_CONTROL_DESC
+  GROUP_BENEFICIAL_OWNER_COUNTRYOF_DOMICILE_ASC
+  GROUP_BENEFICIAL_OWNER_COUNTRYOF_DOMICILE_DESC
+  GROUP_BENEFICIAL_OWNER_COUNTRYOF_DOMICILE_CODE_ASC
+  GROUP_BENEFICIAL_OWNER_COUNTRYOF_DOMICILE_CODE_DESC
+  GROUP_BENEFICIAL_OWNER_COUNTRY_OF_REGISTRATION_ASC
+  GROUP_BENEFICIAL_OWNER_COUNTRY_OF_REGISTRATION_DESC
+  SHIP_MANAGER_ASC
+  SHIP_MANAGER_DESC
+  SHIP_MANAGER_COMPANY_CODE_ASC
+  SHIP_MANAGER_COMPANY_CODE_DESC
+  SHIP_MANAGER_COUNTRY_OF_CONTROL_ASC
+  SHIP_MANAGER_COUNTRY_OF_CONTROL_DESC
+  SHIP_MANAGER_COUNTRYOF_DOMICILE_NAME_ASC
+  SHIP_MANAGER_COUNTRYOF_DOMICILE_NAME_DESC
+  SHIP_MANAGER_COUNTRYOF_DOMICILE_CODE_ASC
+  SHIP_MANAGER_COUNTRYOF_DOMICILE_CODE_DESC
+  SHIP_MANAGER_COUNTRY_OF_REGISTRATION_ASC
+  SHIP_MANAGER_COUNTRY_OF_REGISTRATION_DESC
+  DOCCOMPANY_ASC
+  DOCCOMPANY_DESC
+  DOCUMENTOF_COMPLIANCE_DOCCOMPANY_CODE_ASC
+  DOCUMENTOF_COMPLIANCE_DOCCOMPANY_CODE_DESC
+  DOCCOUNTRY_OF_CONTROL_ASC
+  DOCCOUNTRY_OF_CONTROL_DESC
+  DOCCOMPANY_COUNTRYOF_DOMICILE_ASC
+  DOCCOMPANY_COUNTRYOF_DOMICILE_DESC
+  DOCCOMPANY_COUNTRYOF_DOMICILECODE_ASC
+  DOCCOMPANY_COUNTRYOF_DOMICILECODE_DESC
+  DOCCOUNTRY_OF_REGISTRATION_ASC
+  DOCCOUNTRY_OF_REGISTRATION_DESC
+  REGISTERED_OWNER_ASC
+  REGISTERED_OWNER_DESC
+  REGISTERED_OWNER_CODE_ASC
+  REGISTERED_OWNER_CODE_DESC
+  REGISTERED_OWNER_COUNTRY_OF_CONTROL_ASC
+  REGISTERED_OWNER_COUNTRY_OF_CONTROL_DESC
+  REGISTERED_OWNER_COUNTRYOF_DOMICILE_ASC
+  REGISTERED_OWNER_COUNTRYOF_DOMICILE_DESC
+  REGISTERED_OWNER_COUNTRYOF_DOMICILE_CODE_ASC
+  REGISTERED_OWNER_COUNTRYOF_DOMICILE_CODE_DESC
+  REGISTERED_OWNER_COUNTRY_OF_REGISTRATION_ASC
+  REGISTERED_OWNER_COUNTRY_OF_REGISTRATION_DESC
+  TECHNICAL_MANAGER_ASC
+  TECHNICAL_MANAGER_DESC
+  TECHNICAL_MANAGER_CODE_ASC
+  TECHNICAL_MANAGER_CODE_DESC
+  TECHNICAL_MANAGER_COUNTRY_OF_CONTROL_ASC
+  TECHNICAL_MANAGER_COUNTRY_OF_CONTROL_DESC
+  TECHNICAL_MANAGER_COUNTRY_OF_DOMICILE_ASC
+  TECHNICAL_MANAGER_COUNTRY_OF_DOMICILE_DESC
+  TECHNICAL_MANAGER_COUNTRY_OF_DOMICILE_CODE_ASC
+  TECHNICAL_MANAGER_COUNTRY_OF_DOMICILE_CODE_DESC
+  TECHNICAL_MANAGER_COUNTRY_OF_REGISTRATION_ASC
+  TECHNICAL_MANAGER_COUNTRY_OF_REGISTRATION_DESC
+  BAREBOAT_CHARTER_COMPANY_ASC
+  BAREBOAT_CHARTER_COMPANY_DESC
+  BAREBOAT_CHARTER_COMPANY_CODE_ASC
+  BAREBOAT_CHARTER_COMPANY_CODE_DESC
+  BAREBOAT_CHARTER_COUNTRYOF_CONTROL_ASC
+  BAREBOAT_CHARTER_COUNTRYOF_CONTROL_DESC
+  BAREBOAT_CHARTER_COUNTRYOF_CONTROL_CODE_ASC
+  BAREBOAT_CHARTER_COUNTRYOF_CONTROL_CODE_DESC
+  BAREBOAT_CHARTER_COUNTRYOF_DOMICILE_CODE_ASC
+  BAREBOAT_CHARTER_COUNTRYOF_DOMICILE_CODE_DESC
+  BAREBOAT_CHARTER_COUNTRYOF_DOMICILE_ASC
+  BAREBOAT_CHARTER_COUNTRYOF_DOMICILE_DESC
+  BAREBOAT_CHARTER_COUNTRYOF_REGISTRATION_ASC
+  BAREBOAT_CHARTER_COUNTRYOF_REGISTRATION_DESC
+  BAREBOAT_CHARTER_COUNTRYOF_REGISTRATION_CODE_ASC
+  BAREBOAT_CHARTER_COUNTRYOF_REGISTRATION_CODE_DESC
+  SHIPBUILDER_ASC
+  SHIPBUILDER_DESC
+  SHIPBUILDER_FULL_STYLE_ASC
+  SHIPBUILDER_FULL_STYLE_DESC
+  COUNTRY_OF_BUILD_ASC
+  COUNTRY_OF_BUILD_DESC
+  YARD_NUMBER_ASC
+  YARD_NUMBER_DESC
+  NEWCONSTRUCTION_ENTRY_DATE_ASC
+  NEWCONSTRUCTION_ENTRY_DATE_DESC
+  CONTRACT_DATE_ASC
+  CONTRACT_DATE_DESC
+  KEEL_LAID_DATE_ASC
+  KEEL_LAID_DATE_DESC
+  LAUNCH_DATE_ASC
+  LAUNCH_DATE_DESC
+  DELIVERY_DATE_ASC
+  DELIVERY_DATE_DESC
+  ESTIMATED_COMPLETION_DATE_ASC
+  ESTIMATED_COMPLETION_DATE_DESC
+  DRAUGHT_ASC
+  DRAUGHT_DESC
+  DEPTH_ASC
+  DEPTH_DESC
+  LENGTH_OVERALL_LOA_ASC
+  LENGTH_OVERALL_LOA_DESC
+  LENGTH_BETWEEN_PERPENDICULARS_LBP_ASC
+  LENGTH_BETWEEN_PERPENDICULARS_LBP_DESC
+  BREADTH_EXTREME_ASC
+  BREADTH_EXTREME_DESC
+  BREADTH_MOULDED_ASC
+  BREADTH_MOULDED_DESC
+  CRANE_SWL_ASC
+  CRANE_SWL_DESC
+  NUMBEROF_DECKS_ASC
+  NUMBEROF_DECKS_DESC
+  NUMBEROF_TANKS_ASC
+  NUMBEROF_TANKS_DESC
+  NUMBEROF_HATCHES_ASC
+  NUMBEROF_HATCHES_DESC
+  NUMBEROF_HOLDS_ASC
+  NUMBEROF_HOLDS_DESC
+  NUMBEROF_CREW_ASC
+  NUMBEROF_CREW_DESC
+  NUMBEROF_CARS_ASC
+  NUMBEROF_CARS_DESC
+  PASSENGERS_BERTHED_ASC
+  PASSENGERS_BERTHED_DESC
+  TEU_ASC
+  TEU_DESC
+  IMOCHEMICAL_CLASS_I_ASC
+  IMOCHEMICAL_CLASS_I_DESC
+  IMOCHEMICAL_CLASS_II_ASC
+  IMOCHEMICAL_CLASS_II_DESC
+  IMOCHEMICAL_CLASS_III_ASC
+  IMOCHEMICAL_CLASS_III_DESC
+  CLASS_NARRATIVE_ASC
+  CLASS_NARRATIVE_DESC
+  SAFETY_MANAGEMENT_CERTIFICATE_AUDITOR_ASC
+  SAFETY_MANAGEMENT_CERTIFICATE_AUDITOR_DESC
+  SAFETY_MANAGEMENT_CERTIFICATE_CONVENTIONOR_VOL_ASC
+  SAFETY_MANAGEMENT_CERTIFICATE_CONVENTIONOR_VOL_DESC
+  SAFETY_MANAGEMENT_CERTIFICATE_DATE_EXPIRES_ASC
+  SAFETY_MANAGEMENT_CERTIFICATE_DATE_EXPIRES_DESC
+  SAFETY_MANAGEMENT_CERTIFICATE_DATE_ISSUED_ASC
+  SAFETY_MANAGEMENT_CERTIFICATE_DATE_ISSUED_DESC
+  SAFETY_MANAGEMENT_CERTIFICATE_DOCCOMPANY_ASC
+  SAFETY_MANAGEMENT_CERTIFICATE_DOCCOMPANY_DESC
+  SAFETY_MANAGEMENT_CERTIFICATE_FLAG_ASC
+  SAFETY_MANAGEMENT_CERTIFICATE_FLAG_DESC
+  SAFETY_MANAGEMENT_CERTIFICATE_ISSUER_ASC
+  SAFETY_MANAGEMENT_CERTIFICATE_ISSUER_DESC
+  SAFETY_MANAGEMENT_CERTIFICATE_OTHER_DESCRIPTION_ASC
+  SAFETY_MANAGEMENT_CERTIFICATE_OTHER_DESCRIPTION_DESC
+  SAFETY_MANAGEMENT_CERTIFICATE_SHIP_NAME_ASC
+  SAFETY_MANAGEMENT_CERTIFICATE_SHIP_NAME_DESC
+  SAFETY_MANAGEMENT_CERTIFICATE_SHIP_TYPE_ASC
+  SAFETY_MANAGEMENT_CERTIFICATE_SHIP_TYPE_DESC
+  SAFETY_MANAGEMENT_CERTIFICATE_SOURCE_ASC
+  SAFETY_MANAGEMENT_CERTIFICATE_SOURCE_DESC
+  FLAG_DISPUTED_ASC
+  FLAG_DISPUTED_DESC
+  FLAG_SANCTIONED_COUNTRY_ASC
+  FLAG_SANCTIONED_COUNTRY_DESC
+  HISTORICAL_FLAG_SANCTIONED_COUNTRY_ASC
+  HISTORICAL_FLAG_SANCTIONED_COUNTRY_DESC
+  HISTORICAL_OWNERIN_OFACSANCTIONED_COUNTRY_ASC
+  HISTORICAL_OWNERIN_OFACSANCTIONED_COUNTRY_DESC
+  OVERALL_COMPLIANCE_STATUS_ASC
+  OVERALL_COMPLIANCE_STATUS_DESC
+  OWNERIN_FATFJURISDICTION_ASC
+  OWNERIN_FATFJURISDICTION_DESC
+  OWNERIN_OFACSANCTIONED_COUNTRY_ASC
+  OWNERIN_OFACSANCTIONED_COUNTRY_DESC
+  OWNERON_BESSANCTION_LIST_ASC
+  OWNERON_BESSANCTION_LIST_DESC
+  OWNERON_EUSANCTION_LIST_ASC
+  OWNERON_EUSANCTION_LIST_DESC
+  OWNERON_OFACSANCTION_LIST_ASC
+  OWNERON_OFACSANCTION_LIST_DESC
+  OWNERON_UNSANCTION_LIST_ASC
+  OWNERON_UNSANCTION_LIST_DESC
+  PARENTIN_FATFJURISDICTION_ASC
+  PARENTIN_FATFJURISDICTION_DESC
+  PARENTIN_OFACSANCTIONED_COUNTRY_ASC
+  PARENTIN_OFACSANCTIONED_COUNTRY_DESC
+  SANCTIONED_COUNTRY_PORT_CALL_LAST12M_ASC
+  SANCTIONED_COUNTRY_PORT_CALL_LAST12M_DESC
+  SANCTIONED_COUNTRY_PORT_CALL_LAST3M_ASC
+  SANCTIONED_COUNTRY_PORT_CALL_LAST3M_DESC
+  SANCTIONED_COUNTRY_PORT_CALL_LAST6M_ASC
+  SANCTIONED_COUNTRY_PORT_CALL_LAST6M_DESC
+  SHIPON_EUSANCTION_LIST_ASC
+  SHIPON_EUSANCTION_LIST_DESC
+  SHIPON_OFACNON_SDNSANCTION_LIST_ASC
+  SHIPON_OFACNON_SDNSANCTION_LIST_DESC
+  SHIPON_OFACSANCTION_LIST_ASC
+  SHIPON_OFACSANCTION_LIST_DESC
+  SHIPON_UNSANCTION_LIST_ASC
+  SHIPON_UNSANCTION_LIST_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+  PRIMARY_KEY_ASC
+  PRIMARY_KEY_DESC
+}
+
+"""
+Represents an update to a `ShipData`. Fields that are set will be updated.
+"""
+input ShipDataPatch {
+  hash: String
+  lrimoShipNo: String
+  shipName: String
+  shipStatus: String
+  shipStatusEffectiveDate: String
+  shiptypeLevel5: String
+  shiptypeGroup: String
+  yearOfBuild: String
+  grossTonnage: Int
+  netTonnage: Int
+  deadweight: Int
+  flagName: String
+  callSign: String
+  maritimeMobileServiceIdentityMmsiNumber: String
+  portofRegistry: String
+  officialNumber: String
+  pandIClub: String
+  operator: String
+  operatorCompanyCode: String
+  operatorCountryOfControl: String
+  operatorCountryofDomicileName: String
+  operatorCountryofDomicileCode: String
+  operatorCountryOfRegistration: String
+  groupBeneficialOwner: String
+  groupBeneficialOwnerCompanyCode: String
+  groupBeneficialOwnerCountryOfControl: String
+  groupBeneficialOwnerCountryofDomicile: String
+  groupBeneficialOwnerCountryofDomicileCode: String
+  groupBeneficialOwnerCountryOfRegistration: String
+  shipManager: String
+  shipManagerCompanyCode: String
+  shipManagerCountryOfControl: String
+  shipManagerCountryofDomicileName: String
+  shipManagerCountryofDomicileCode: String
+  shipManagerCountryOfRegistration: String
+  docCompany: String
+  documentofComplianceDocCompanyCode: String
+  docCountryOfControl: String
+  docCompanyCountryofDomicile: String
+  docCompanyCountryofDomicilecode: String
+  docCountryOfRegistration: String
+  registeredOwner: String
+  registeredOwnerCode: String
+  registeredOwnerCountryOfControl: String
+  registeredOwnerCountryofDomicile: String
+  registeredOwnerCountryofDomicileCode: String
+  registeredOwnerCountryOfRegistration: String
+  technicalManager: String
+  technicalManagerCode: String
+  technicalManagerCountryOfControl: String
+  technicalManagerCountryOfDomicile: String
+  technicalManagerCountryOfDomicileCode: String
+  technicalManagerCountryOfRegistration: String
+  bareboatCharterCompany: String
+  bareboatCharterCompanyCode: String
+  bareboatCharterCountryofControl: String
+  bareboatCharterCountryofControlCode: String
+  bareboatCharterCountryofDomicileCode: String
+  bareboatCharterCountryofDomicile: String
+  bareboatCharterCountryofRegistration: String
+  bareboatCharterCountryofRegistrationCode: String
+  shipbuilder: String
+  shipbuilderFullStyle: String
+  countryOfBuild: String
+  yardNumber: String
+  newconstructionEntryDate: String
+  contractDate: String
+  keelLaidDate: String
+  launchDate: String
+  deliveryDate: String
+  estimatedCompletionDate: String
+  draught: BigFloat
+  depth: BigFloat
+  lengthOverallLoa: BigFloat
+  lengthBetweenPerpendicularsLbp: BigFloat
+  breadthExtreme: BigFloat
+  breadthMoulded: BigFloat
+  craneSwl: BigFloat
+  numberofDecks: Int
+  numberofTanks: Int
+  numberofHatches: Int
+  numberofHolds: Int
+  numberofCrew: Int
+  numberofCars: Int
+  passengersBerthed: Int
+  teu: Int
+  imoChemicalClassI: String
+  imoChemicalClassIi: String
+  imoChemicalClassIii: String
+  classNarrative: String
+  safetyManagementCertificateAuditor: String
+  safetyManagementCertificateConventionorVol: String
+  safetyManagementCertificateDateExpires: String
+  safetyManagementCertificateDateIssued: String
+  safetyManagementCertificateDocCompany: String
+  safetyManagementCertificateFlag: String
+  safetyManagementCertificateIssuer: String
+  safetyManagementCertificateOtherDescription: String
+  safetyManagementCertificateShipName: String
+  safetyManagementCertificateShipType: String
+  safetyManagementCertificateSource: String
+  flagDisputed: Int
+  flagSanctionedCountry: Int
+  historicalFlagSanctionedCountry: Int
+  historicalOwnerinOfacSanctionedCountry: Int
+  overallComplianceStatus: Int
+  ownerinFatfJurisdiction: Int
+  ownerinOfacSanctionedCountry: Int
+  owneronBesSanctionList: Int
+  owneronEuSanctionList: Int
+  owneronOfacSanctionList: Int
+  owneronUnSanctionList: Int
+  parentinFatfJurisdiction: Int
+  parentinOfacSanctionedCountry: Int
+  sanctionedCountryPortCallLast12M: Int
+  sanctionedCountryPortCallLast3M: Int
+  sanctionedCountryPortCallLast6M: Int
+  shiponEuSanctionList: Int
+  shiponOfacNonSdnSanctionList: Int
+  shiponOfacSanctionList: Int
+  shiponUnSanctionList: Int
+  createDate: Date
+}
+
+"""A connection to a list of `ShipManagerHistory` values."""
+type ShipManagerHistoriesConnection {
+  """A list of `ShipManagerHistory` objects."""
+  nodes: [ShipManagerHistory]!
+
+  """
+  A list of edges which contains the `ShipManagerHistory` and cursor to aid in pagination.
+  """
+  edges: [ShipManagerHistoriesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """
+  The count of *all* `ShipManagerHistory` you could get from the connection.
+  """
+  totalCount: Int
+}
+
+"""A `ShipManagerHistory` edge in the connection."""
+type ShipManagerHistoriesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `ShipManagerHistory` at the end of the edge."""
+  node: ShipManagerHistory
+}
+
+"""Methods to use when ordering `ShipManagerHistory`."""
+enum ShipManagerHistoriesOrderBy {
+  NATURAL
+  LRNO_ASC
+  LRNO_DESC
+  SEQUENCE_ASC
+  SEQUENCE_DESC
+  EFFECTIVE_DATE_ASC
+  EFFECTIVE_DATE_DESC
+  SHIP_MANAGER_ASC
+  SHIP_MANAGER_DESC
+  SHIP_MANAGER_CODE_ASC
+  SHIP_MANAGER_CODE_DESC
+  COMPANY_STATUS_ASC
+  COMPANY_STATUS_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+type ShipManagerHistory {
+  lrno: String
+  sequence: String
+  effectiveDate: String
+  shipManager: String
+  shipManagerCode: String
+  companyStatus: String
+  createDate: Date
+}
+
+"""
+A condition to be used against `ShipManagerHistory` object types. All fields are
+tested for equality and combined with a logical ‘and.’
+"""
+input ShipManagerHistoryCondition {
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `sequence` field."""
+  sequence: String
+
+  """Checks for equality with the object’s `effectiveDate` field."""
+  effectiveDate: String
+
+  """Checks for equality with the object’s `shipManager` field."""
+  shipManager: String
+
+  """Checks for equality with the object’s `shipManagerCode` field."""
+  shipManagerCode: String
+
+  """Checks for equality with the object’s `companyStatus` field."""
+  companyStatus: String
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `ShipManagerHistory`"""
+input ShipManagerHistoryInput {
+  lrno: String
+  sequence: String
+  effectiveDate: String
+  shipManager: String
+  shipManagerCode: String
+  companyStatus: String
+  createDate: Date
+}
+
+type SpecialFeature {
+  lrno: String
+  sequence: String
+  specialFeature: String
+  specialFeatureCode: String
+  createDate: Date
+}
+
+"""
+A condition to be used against `SpecialFeature` object types. All fields are
+tested for equality and combined with a logical ‘and.’
+"""
+input SpecialFeatureCondition {
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `sequence` field."""
+  sequence: String
+
+  """Checks for equality with the object’s `specialFeature` field."""
+  specialFeature: String
+
+  """Checks for equality with the object’s `specialFeatureCode` field."""
+  specialFeatureCode: String
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `SpecialFeature`"""
+input SpecialFeatureInput {
+  lrno: String
+  sequence: String
+  specialFeature: String
+  specialFeatureCode: String
+  createDate: Date
+}
+
+"""A connection to a list of `SpecialFeature` values."""
+type SpecialFeaturesConnection {
+  """A list of `SpecialFeature` objects."""
+  nodes: [SpecialFeature]!
+
+  """
+  A list of edges which contains the `SpecialFeature` and cursor to aid in pagination.
+  """
+  edges: [SpecialFeaturesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """
+  The count of *all* `SpecialFeature` you could get from the connection.
+  """
+  totalCount: Int
+}
+
+"""A `SpecialFeature` edge in the connection."""
+type SpecialFeaturesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `SpecialFeature` at the end of the edge."""
+  node: SpecialFeature
+}
+
+"""Methods to use when ordering `SpecialFeature`."""
+enum SpecialFeaturesOrderBy {
+  NATURAL
+  LRNO_ASC
+  LRNO_DESC
+  SEQUENCE_ASC
+  SEQUENCE_DESC
+  SPECIAL_FEATURE_ASC
+  SPECIAL_FEATURE_DESC
+  SPECIAL_FEATURE_CODE_ASC
+  SPECIAL_FEATURE_CODE_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+"""A connection to a list of `StatusHistory` values."""
+type StatusHistoriesConnection {
+  """A list of `StatusHistory` objects."""
+  nodes: [StatusHistory]!
+
+  """
+  A list of edges which contains the `StatusHistory` and cursor to aid in pagination.
+  """
+  edges: [StatusHistoriesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """The count of *all* `StatusHistory` you could get from the connection."""
+  totalCount: Int
+}
+
+"""A `StatusHistory` edge in the connection."""
+type StatusHistoriesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `StatusHistory` at the end of the edge."""
+  node: StatusHistory
+}
+
+"""Methods to use when ordering `StatusHistory`."""
+enum StatusHistoriesOrderBy {
+  NATURAL
+  LRNO_ASC
+  LRNO_DESC
+  STATUS_ASC
+  STATUS_DESC
+  SEQUENCE_ASC
+  SEQUENCE_DESC
+  STATUS_DATE_ASC
+  STATUS_DATE_DESC
+  STATUS_CODE_ASC
+  STATUS_CODE_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+type StatusHistory {
+  lrno: String
+  status: String
+  sequence: String
+  statusDate: String
+  statusCode: String
+  createDate: Date
+}
+
+"""
+A condition to be used against `StatusHistory` object types. All fields are
+tested for equality and combined with a logical ‘and.’
+"""
+input StatusHistoryCondition {
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `status` field."""
+  status: String
+
+  """Checks for equality with the object’s `sequence` field."""
+  sequence: String
+
+  """Checks for equality with the object’s `statusDate` field."""
+  statusDate: String
+
+  """Checks for equality with the object’s `statusCode` field."""
+  statusCode: String
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `StatusHistory`"""
+input StatusHistoryInput {
+  lrno: String
+  status: String
+  sequence: String
+  statusDate: String
+  statusCode: String
+  createDate: Date
+}
+
+type SurveyDate {
+  lrno: String
+  classSocietyCode: String
+  specialSurvey: String
+  specialSurveyLakes: String
+  continuousHullSurvey: String
+  continuousMachinerySurvey: String
+  tailShaftSurvey: String
+  dockingSurvey: String
+  annualSurvey: String
+  classSociety: String
+  createDate: Date
+}
+
+"""
+A condition to be used against `SurveyDate` object types. All fields are tested
+for equality and combined with a logical ‘and.’
+"""
+input SurveyDateCondition {
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `classSocietyCode` field."""
+  classSocietyCode: String
+
+  """Checks for equality with the object’s `specialSurvey` field."""
+  specialSurvey: String
+
+  """Checks for equality with the object’s `specialSurveyLakes` field."""
+  specialSurveyLakes: String
+
+  """Checks for equality with the object’s `continuousHullSurvey` field."""
+  continuousHullSurvey: String
+
+  """
+  Checks for equality with the object’s `continuousMachinerySurvey` field.
+  """
+  continuousMachinerySurvey: String
+
+  """Checks for equality with the object’s `tailShaftSurvey` field."""
+  tailShaftSurvey: String
+
+  """Checks for equality with the object’s `dockingSurvey` field."""
+  dockingSurvey: String
+
+  """Checks for equality with the object’s `annualSurvey` field."""
+  annualSurvey: String
+
+  """Checks for equality with the object’s `classSociety` field."""
+  classSociety: String
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""A connection to a list of `SurveyDateHistory` values."""
+type SurveyDateHistoriesConnection {
+  """A list of `SurveyDateHistory` objects."""
+  nodes: [SurveyDateHistory]!
+
+  """
+  A list of edges which contains the `SurveyDateHistory` and cursor to aid in pagination.
+  """
+  edges: [SurveyDateHistoriesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """
+  The count of *all* `SurveyDateHistory` you could get from the connection.
+  """
+  totalCount: Int
+}
+
+"""A `SurveyDateHistory` edge in the connection."""
+type SurveyDateHistoriesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `SurveyDateHistory` at the end of the edge."""
+  node: SurveyDateHistory
+}
+
+"""Methods to use when ordering `SurveyDateHistory`."""
+enum SurveyDateHistoriesOrderBy {
+  NATURAL
+  LRNO_ASC
+  LRNO_DESC
+  CLASS_SOCIETY_CODE_ASC
+  CLASS_SOCIETY_CODE_DESC
+  SPECIAL_SURVEY_ASC
+  SPECIAL_SURVEY_DESC
+  CONTINUOUS_SURVEY_ASC
+  CONTINUOUS_SURVEY_DESC
+  TAILSHAFT_SURVEY_ASC
+  TAILSHAFT_SURVEY_DESC
+  DOCKING_SURVEY_ASC
+  DOCKING_SURVEY_DESC
+  CLASS_SOCIETY_ASC
+  CLASS_SOCIETY_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+type SurveyDateHistory {
+  lrno: String
+  classSocietyCode: String
+  specialSurvey: String
+  continuousSurvey: String
+  tailshaftSurvey: String
+  dockingSurvey: String
+  classSociety: String
+  createDate: Date
+}
+
+"""
+A condition to be used against `SurveyDateHistory` object types. All fields are
+tested for equality and combined with a logical ‘and.’
+"""
+input SurveyDateHistoryCondition {
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `classSocietyCode` field."""
+  classSocietyCode: String
+
+  """Checks for equality with the object’s `specialSurvey` field."""
+  specialSurvey: String
+
+  """Checks for equality with the object’s `continuousSurvey` field."""
+  continuousSurvey: String
+
+  """Checks for equality with the object’s `tailshaftSurvey` field."""
+  tailshaftSurvey: String
+
+  """Checks for equality with the object’s `dockingSurvey` field."""
+  dockingSurvey: String
+
+  """Checks for equality with the object’s `classSociety` field."""
+  classSociety: String
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `SurveyDateHistory`"""
+input SurveyDateHistoryInput {
+  lrno: String
+  classSocietyCode: String
+  specialSurvey: String
+  continuousSurvey: String
+  tailshaftSurvey: String
+  dockingSurvey: String
+  classSociety: String
+  createDate: Date
+}
+
+"""An input for mutations affecting `SurveyDate`"""
+input SurveyDateInput {
+  lrno: String
+  classSocietyCode: String
+  specialSurvey: String
+  specialSurveyLakes: String
+  continuousHullSurvey: String
+  continuousMachinerySurvey: String
+  tailShaftSurvey: String
+  dockingSurvey: String
+  annualSurvey: String
+  classSociety: String
+  createDate: Date
+}
+
+"""A connection to a list of `SurveyDate` values."""
+type SurveyDatesConnection {
+  """A list of `SurveyDate` objects."""
+  nodes: [SurveyDate]!
+
+  """
+  A list of edges which contains the `SurveyDate` and cursor to aid in pagination.
+  """
+  edges: [SurveyDatesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """The count of *all* `SurveyDate` you could get from the connection."""
+  totalCount: Int
+}
+
+"""A `SurveyDate` edge in the connection."""
+type SurveyDatesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `SurveyDate` at the end of the edge."""
+  node: SurveyDate
+}
+
+"""Methods to use when ordering `SurveyDate`."""
+enum SurveyDatesOrderBy {
+  NATURAL
+  LRNO_ASC
+  LRNO_DESC
+  CLASS_SOCIETY_CODE_ASC
+  CLASS_SOCIETY_CODE_DESC
+  SPECIAL_SURVEY_ASC
+  SPECIAL_SURVEY_DESC
+  SPECIAL_SURVEY_LAKES_ASC
+  SPECIAL_SURVEY_LAKES_DESC
+  CONTINUOUS_HULL_SURVEY_ASC
+  CONTINUOUS_HULL_SURVEY_DESC
+  CONTINUOUS_MACHINERY_SURVEY_ASC
+  CONTINUOUS_MACHINERY_SURVEY_DESC
+  TAIL_SHAFT_SURVEY_ASC
+  TAIL_SHAFT_SURVEY_DESC
+  DOCKING_SURVEY_ASC
+  DOCKING_SURVEY_DESC
+  ANNUAL_SURVEY_ASC
+  ANNUAL_SURVEY_DESC
+  CLASS_SOCIETY_ASC
+  CLASS_SOCIETY_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+"""A connection to a list of `TechnicalManagerHistory` values."""
+type TechnicalManagerHistoriesConnection {
+  """A list of `TechnicalManagerHistory` objects."""
+  nodes: [TechnicalManagerHistory]!
+
+  """
+  A list of edges which contains the `TechnicalManagerHistory` and cursor to aid in pagination.
+  """
+  edges: [TechnicalManagerHistoriesEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """
+  The count of *all* `TechnicalManagerHistory` you could get from the connection.
+  """
+  totalCount: Int
+}
+
+"""A `TechnicalManagerHistory` edge in the connection."""
+type TechnicalManagerHistoriesEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `TechnicalManagerHistory` at the end of the edge."""
+  node: TechnicalManagerHistory
+}
+
+"""Methods to use when ordering `TechnicalManagerHistory`."""
+enum TechnicalManagerHistoriesOrderBy {
+  NATURAL
+  LRNO_ASC
+  LRNO_DESC
+  SEQUENCE_ASC
+  SEQUENCE_DESC
+  EFFECTIVE_DATE_ASC
+  EFFECTIVE_DATE_DESC
+  TECHNICAL_MANAGER_ASC
+  TECHNICAL_MANAGER_DESC
+  TECHNICAL_MANAGER_CODE_ASC
+  TECHNICAL_MANAGER_CODE_DESC
+  COMPANY_STATUS_ASC
+  COMPANY_STATUS_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+type TechnicalManagerHistory {
+  lrno: String
+  sequence: String
+  effectiveDate: String
+  technicalManager: String
+  technicalManagerCode: String
+  companyStatus: String
+  createDate: Date
+}
+
+"""
+A condition to be used against `TechnicalManagerHistory` object types. All
+fields are tested for equality and combined with a logical ‘and.’
+"""
+input TechnicalManagerHistoryCondition {
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `sequence` field."""
+  sequence: String
+
+  """Checks for equality with the object’s `effectiveDate` field."""
+  effectiveDate: String
+
+  """Checks for equality with the object’s `technicalManager` field."""
+  technicalManager: String
+
+  """Checks for equality with the object’s `technicalManagerCode` field."""
+  technicalManagerCode: String
+
+  """Checks for equality with the object’s `companyStatus` field."""
+  companyStatus: String
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `TechnicalManagerHistory`"""
+input TechnicalManagerHistoryInput {
+  lrno: String
+  sequence: String
+  effectiveDate: String
+  technicalManager: String
+  technicalManagerCode: String
+  companyStatus: String
+  createDate: Date
+}
+
+type UnverifiedOwnership {
+  lrno: String
+  annotid: Int
+  bareBoatChartererCode: String
+  bareBoatCharterer: String
+  commercialManagerCode: String
+  commercialManager: String
+  commercialOperatorCode: String
+  commercialOperator: String
+  registeredOwnerCode: String
+  registeredOwner: String
+  technicalManagerCode: String
+  technicalManager: String
+  ownershipTakeOverDate: String
+  newFlagCode: String
+  newFlag: String
+  createDate: Date
+}
+
+"""
+A condition to be used against `UnverifiedOwnership` object types. All fields
+are tested for equality and combined with a logical ‘and.’
+"""
+input UnverifiedOwnershipCondition {
+  """Checks for equality with the object’s `lrno` field."""
+  lrno: String
+
+  """Checks for equality with the object’s `annotid` field."""
+  annotid: Int
+
+  """Checks for equality with the object’s `bareBoatChartererCode` field."""
+  bareBoatChartererCode: String
+
+  """Checks for equality with the object’s `bareBoatCharterer` field."""
+  bareBoatCharterer: String
+
+  """Checks for equality with the object’s `commercialManagerCode` field."""
+  commercialManagerCode: String
+
+  """Checks for equality with the object’s `commercialManager` field."""
+  commercialManager: String
+
+  """Checks for equality with the object’s `commercialOperatorCode` field."""
+  commercialOperatorCode: String
+
+  """Checks for equality with the object’s `commercialOperator` field."""
+  commercialOperator: String
+
+  """Checks for equality with the object’s `registeredOwnerCode` field."""
+  registeredOwnerCode: String
+
+  """Checks for equality with the object’s `registeredOwner` field."""
+  registeredOwner: String
+
+  """Checks for equality with the object’s `technicalManagerCode` field."""
+  technicalManagerCode: String
+
+  """Checks for equality with the object’s `technicalManager` field."""
+  technicalManager: String
+
+  """Checks for equality with the object’s `ownershipTakeOverDate` field."""
+  ownershipTakeOverDate: String
+
+  """Checks for equality with the object’s `newFlagCode` field."""
+  newFlagCode: String
+
+  """Checks for equality with the object’s `newFlag` field."""
+  newFlag: String
+
+  """Checks for equality with the object’s `createDate` field."""
+  createDate: Date
+}
+
+"""An input for mutations affecting `UnverifiedOwnership`"""
+input UnverifiedOwnershipInput {
+  lrno: String
+  annotid: Int
+  bareBoatChartererCode: String
+  bareBoatCharterer: String
+  commercialManagerCode: String
+  commercialManager: String
+  commercialOperatorCode: String
+  commercialOperator: String
+  registeredOwnerCode: String
+  registeredOwner: String
+  technicalManagerCode: String
+  technicalManager: String
+  ownershipTakeOverDate: String
+  newFlagCode: String
+  newFlag: String
+  createDate: Date
+}
+
+"""A connection to a list of `UnverifiedOwnership` values."""
+type UnverifiedOwnershipsConnection {
+  """A list of `UnverifiedOwnership` objects."""
+  nodes: [UnverifiedOwnership]!
+
+  """
+  A list of edges which contains the `UnverifiedOwnership` and cursor to aid in pagination.
+  """
+  edges: [UnverifiedOwnershipsEdge!]!
+
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """
+  The count of *all* `UnverifiedOwnership` you could get from the connection.
+  """
+  totalCount: Int
+}
+
+"""A `UnverifiedOwnership` edge in the connection."""
+type UnverifiedOwnershipsEdge {
+  """A cursor for use in pagination."""
+  cursor: Cursor
+
+  """The `UnverifiedOwnership` at the end of the edge."""
+  node: UnverifiedOwnership
+}
+
+"""Methods to use when ordering `UnverifiedOwnership`."""
+enum UnverifiedOwnershipsOrderBy {
+  NATURAL
+  LRNO_ASC
+  LRNO_DESC
+  ANNOTID_ASC
+  ANNOTID_DESC
+  BARE_BOAT_CHARTERER_CODE_ASC
+  BARE_BOAT_CHARTERER_CODE_DESC
+  BARE_BOAT_CHARTERER_ASC
+  BARE_BOAT_CHARTERER_DESC
+  COMMERCIAL_MANAGER_CODE_ASC
+  COMMERCIAL_MANAGER_CODE_DESC
+  COMMERCIAL_MANAGER_ASC
+  COMMERCIAL_MANAGER_DESC
+  COMMERCIAL_OPERATOR_CODE_ASC
+  COMMERCIAL_OPERATOR_CODE_DESC
+  COMMERCIAL_OPERATOR_ASC
+  COMMERCIAL_OPERATOR_DESC
+  REGISTERED_OWNER_CODE_ASC
+  REGISTERED_OWNER_CODE_DESC
+  REGISTERED_OWNER_ASC
+  REGISTERED_OWNER_DESC
+  TECHNICAL_MANAGER_CODE_ASC
+  TECHNICAL_MANAGER_CODE_DESC
+  TECHNICAL_MANAGER_ASC
+  TECHNICAL_MANAGER_DESC
+  OWNERSHIP_TAKE_OVER_DATE_ASC
+  OWNERSHIP_TAKE_OVER_DATE_DESC
+  NEW_FLAG_CODE_ASC
+  NEW_FLAG_CODE_DESC
+  NEW_FLAG_ASC
+  NEW_FLAG_DESC
+  CREATE_DATE_ASC
+  CREATE_DATE_DESC
+}
+
+"""All input for the `updateShipDataByHash` mutation."""
+input UpdateShipDataByHashInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  An object where the defined keys will be set on the `ShipData` being updated.
+  """
+  shipDataPatch: ShipDataPatch!
+  hash: String!
+}
+
+"""All input for the `updateShipData` mutation."""
+input UpdateShipDataInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  The globally unique `ID` which will identify a single `ShipData` to be updated.
+  """
+  nodeId: ID!
+
+  """
+  An object where the defined keys will be set on the `ShipData` being updated.
+  """
+  shipDataPatch: ShipDataPatch!
+}
+
+"""The output of our update `ShipData` mutation."""
+type UpdateShipDataPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """The `ShipData` that was updated by this mutation."""
+  shipData: ShipData
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """An edge for our `ShipData`. May be used by Relay 1."""
+  shipDataEdge(
+    """The method to use when ordering `ShipData`."""
+    orderBy: [ShipDataOrderBy!] = PRIMARY_KEY_ASC
+  ): ShipDataEdge
+}
